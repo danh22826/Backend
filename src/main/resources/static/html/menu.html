@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTC Cinema - Phim</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/html.css">
+</head>
+<body>
+
+<header>
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <a href="../lor/dang-nhap.html">Dang nhap</a>
+                <span>|</span>
+                <a href="../lor/dang-nhap.html#register">Dang ky</a>
+            </div>
+            <div class="top-bar-right">
+                <a href="../lor/the-thanh-vien.html">The thanh vien</a>
+                <a href="../lor/ho-tro.html">Ho tro khach hang</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-main">
+        <a href="menu.html" class="header-logo">
+            <img src="../poster/logo.png" alt="UTC Cinema">
+            <span class="logo-text">UTC CINEMA</span>
+        </a>
+    </div>
+
+    <nav class="main-nav">
+        <div class="container">
+            <div class="nav-links">
+                <a href="menu.html">TRANG CHU</a>
+                <span class="nav-divider">|</span>
+                <a href="DatVe.html">MUA VE</a>
+                <span class="nav-divider">|</span>
+                <a href="menu.html" class="active">PHIM</a>
+                <span class="nav-divider">|</span>
+                <a href="../lor/rap-chieu-phim.html">RAP CHIEU PHIM</a>
+                <span class="nav-divider">|</span>
+                <a href="../lor/uu-dai.html">TIN MOI & UU DAI</a>
+                <span class="nav-divider">|</span>
+                <a href="../lor/lien-he.html">LIEN HE</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="gold-bar"></div>
+
+<div class="tab-bar">
+    <a href="#dang-chieu" data-tab="dang-chieu" class="active" onclick="setTab('dang-chieu'); return false;">PHIM DANG CHIEU</a>
+    <a href="#sap-chieu" data-tab="sap-chieu" onclick="setTab('sap-chieu'); return false;">PHIM SAP CHIEU</a>
+</div>
+
+<nav class="movie-breadcrumb">
+    <div class="container movie-breadcrumb-inner">
+        <a href="menu.html" class="breadcrumb-home">Trang chu</a>
+        <span> / </span>
+        <span id="breadcrumbLabel">Phim dang chieu</span>
+    </div>
+</nav>
+
+<section class="movie-filter-section">
+    <div class="container movie-filter-wrap">
+        <input
+                type="text"
+                id="searchInput"
+                class="form-control"
+                placeholder="Tim phim..."
+                oninput="filterMovies()"
+        >
+        <select
+                id="genreFilter"
+                class="form-control"
+                onchange="filterMovies()"
+        >
+            <option value="">Tat ca the loai</option>
+        </select>
+    </div>
+</section>
+
+<section class="movie-list-section">
+    <div class="container">
+        <div class="movie-grid" id="movieGrid">
+            <div class="loading-spinner"><div class="spinner"></div></div>
+        </div>
+        <div id="pagination" class="movie-pagination"></div>
+    </div>
+</section>
+
+<aside class="quick-actions">
+    <a href="DatVe.html" class="quick-action-btn">
+        <i class="fas fa-ticket-alt"></i>Dat ve nhanh
+    </a>
+    <a href="../lor/rap-chieu-phim.html" class="quick-action-btn">
+        <i class="fas fa-map-marker-alt"></i>Noi dat ve
+    </a>
+    <a href="../lor/the-thanh-vien.html" class="quick-action-btn">
+        <i class="fas fa-trophy"></i>Membership
+    </a>
+    <a href="../lor/ho-tro.html" class="quick-action-btn">
+        <i class="fas fa-question-circle"></i>Ho tro
+    </a>
+    <button class="quick-action-btn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+        <i class="fas fa-chevron-up"></i>TOP
+    </button>
+</aside>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <div class="footer-logo">UTC CINEMA</div>
+                <p>Trang phim mau tach rieng de tai su dung cho cac trang giao dien tiep theo.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Kham pha</h4>
+                <a href="menu.html">Phim dang chieu</a>
+                <a href="DatVe.html">Mua ve online</a>
+                <a href="../lor/rap-chieu-phim.html">He thong rap</a>
+                <a href="../lor/uu-dai.html">Tin moi va uu dai</a>
+            </div>
+
+            <div class="footer-links">
+                <h4>Ho tro</h4>
+                <a href="../lor/ho-tro.html">Cau hoi thuong gap</a>
+                <a href="../lor/lien-he.html">Lien he</a>
+                <a href="../lor/the-thanh-vien.html">The thanh vien</a>
+            </div>
+
+            <div class="footer-links">
+                <h4>Ket noi</h4>
+                <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fab fa-youtube"></i> YouTube</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-legal">
+                <a href="#">Chinh sach bao mat</a>
+                <a href="#">Dieu khoan su dung</a>
+                <a href="#">Chinh sach khach hang</a>
+            </div>
+            <div>
+                <p>&copy; 2026 UTC CINEMA. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+const MOVIES = [
+    {
+        id: "PHIM001",
+        title: "Batman",
+        genres: ["Hanh dong", "Toi pham"],
+        duration: 126,
+        age: "C16",
+        release: "04/04/2026",
+        status: "dang-chieu",
+        poster: "../poster/batman.jpg"
+    },
+    {
+        id: "PHIM002",
+        title: "Joker",
+        genres: ["Tam ly", "Toi pham"],
+        duration: 122,
+        age: "C18",
+        release: "03/04/2026",
+        status: "dang-chieu",
+        poster: "../poster/joker.jpg"
+    },
+    {
+        id: "PHIM003",
+        title: "Avengers Endgame",
+        genres: ["Sieu anh hung", "Phieu luu"],
+        duration: 181,
+        age: "C13",
+        release: "29/03/2026",
+        status: "dang-chieu",
+        poster: "../poster/endgame.jpg"
+    },
+    {
+        id: "PHIM004",
+        title: "Parasite",
+        genres: ["Chinh kich", "Giat gan"],
+        duration: 132,
+        age: "C18",
+        release: "28/03/2026",
+        status: "dang-chieu",
+        poster: "../poster/parasite.jpg"
+    },
+    {
+        id: "PHIM005",
+        title: "Encanto",
+        genres: ["Hoat hinh", "Gia dinh"],
+        duration: 109,
+        age: "P",
+        release: "12/04/2026",
+        status: "sap-chieu",
+        poster: "../poster/encanto.jpg"
+    },
+    {
+        id: "PHIM006",
+        title: "Frozen II",
+        genres: ["Hoat hinh", "Am nhac"],
+        duration: 103,
+        age: "P",
+        release: "18/04/2026",
+        status: "sap-chieu",
+        poster: "../poster/frozen2.jpg"
+    },
+    {
+        id: "PHIM007",
+        title: "Fast X",
+        genres: ["Hanh dong", "Toc do"],
+        duration: 141,
+        age: "C16",
+        release: "25/04/2026",
+        status: "sap-chieu",
+        poster: "../poster/fast10.jpg"
+    },
+    {
+        id: "PHIM008",
+        title: "Spider-Man",
+        genres: ["Sieu anh hung", "Phieu luu"],
+        duration: 148,
+        age: "C13",
+        release: "30/04/2026",
+        status: "sap-chieu",
+        poster: "../poster/spiderman.jpg"
+    }
+];
+
+const PER_PAGE = 4;
+let activeTab = "dang-chieu";
+let currentPage = 1;
+
+document.addEventListener("DOMContentLoaded", () => {
+    initStateFromHash();
+    populateGenres();
+    renderMovies();
+    window.addEventListener("hashchange", handleHashChange);
+});
+
+function initStateFromHash() {
+    activeTab = window.location.hash === "#sap-chieu" ? "sap-chieu" : "dang-chieu";
+    syncTabUi();
+}
+
+function handleHashChange() {
+    initStateFromHash();
+    currentPage = 1;
+    renderMovies();
+}
+
+function setTab(tab) {
+    activeTab = tab;
+    currentPage = 1;
+    const nextHash = tab === "sap-chieu" ? "#sap-chieu" : "#dang-chieu";
+    window.location.hash = nextHash;
+    syncTabUi();
+    renderMovies();
+}
+
+function syncTabUi() {
+    document.querySelectorAll(".tab-bar a").forEach((link) => {
+        link.classList.toggle("active", link.dataset.tab === activeTab);
+    });
+
+    const breadcrumbLabel = document.getElementById("breadcrumbLabel");
+    if (breadcrumbLabel) {
+        breadcrumbLabel.textContent = activeTab === "sap-chieu" ? "Phim sap chieu" : "Phim dang chieu";
+    }
+}
+
+function populateGenres() {
+    const genreFilter = document.getElementById("genreFilter");
+    const genres = [...new Set(MOVIES.flatMap((movie) => movie.genres))].sort((a, b) => a.localeCompare(b));
+
+    genreFilter.innerHTML = '<option value="">Tat ca the loai</option>' +
+        genres.map((genre) => `<option value="${genre}">${genre}</option>`).join("");
+}
+
+function filterMovies() {
+    currentPage = 1;
+    renderMovies();
+}
+
+function getFilteredMovies() {
+    const keyword = document.getElementById("searchInput").value.trim().toLowerCase();
+    const genre = document.getElementById("genreFilter").value;
+
+    return MOVIES.filter((movie) => {
+        const matchTab = movie.status === activeTab;
+        const matchKeyword = !keyword || movie.title.toLowerCase().includes(keyword);
+        const matchGenre = !genre || movie.genres.includes(genre);
+        return matchTab && matchKeyword && matchGenre;
+    });
+}
+
+function renderMovies() {
+    const filteredMovies = getFilteredMovies();
+    const grid = document.getElementById("movieGrid");
+
+    if (!filteredMovies.length) {
+        grid.innerHTML = `
+            <div class="empty-state">
+                <i class="fas fa-film"></i>
+                <h3>Khong co phim phu hop voi bo loc hien tai</h3>
+            </div>
+        `;
+        document.getElementById("pagination").innerHTML = "";
+        return;
+    }
+
+    const totalPages = Math.ceil(filteredMovies.length / PER_PAGE);
+    const start = (currentPage - 1) * PER_PAGE;
+    const pageMovies = filteredMovies.slice(start, start + PER_PAGE);
+
+    grid.innerHTML = pageMovies.map((movie) => `
+        <article class="movie-card">
+            <div class="movie-card-poster">
+                <img src="${movie.poster}" alt="${escapeHtml(movie.title)}" loading="lazy">
+                <div class="movie-card-overlay">
+                    <a href="chitietphim.html?id=${encodeURIComponent(movie.id)}" class="btn btn-primary">XEM CHI TIET</a>
+                    <a href="chitietphim.html?id=${encodeURIComponent(movie.id)}#showtimeSection" class="btn btn-primary">MUA VE</a>
+                </div>
+            </div>
+            <div class="movie-card-body">
+                <a href="chitietphim.html?id=${encodeURIComponent(movie.id)}" class="movie-card-title-link">
+                    <h4>${escapeHtml(movie.title)}</h4>
+                </a>
+                <div class="card-meta">
+                    ${getAgeBadge(movie.age)}
+                    <span>${movie.duration} phut</span>
+                    <span>${movie.release}</span>
+                </div>
+            </div>
+        </article>
+    `).join("");
+
+    renderPagination(totalPages);
+}
+
+function renderPagination(totalPages) {
+    const pagination = document.getElementById("pagination");
+
+    if (totalPages <= 1) {
+        pagination.innerHTML = "";
+        return;
+    }
+
+    pagination.innerHTML = Array.from({ length: totalPages }, (_, index) => {
+        const page = index + 1;
+        const buttonClass = page === currentPage ? "btn-primary" : "btn-outline";
+        return `
+            <button class="btn ${buttonClass} movie-page-btn" onclick="goPage(${page})">
+                ${page}
+            </button>
+        `;
+    }).join("");
+}
+
+function goPage(page) {
+    currentPage = page;
+    renderMovies();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function getAgeBadge(age) {
+    let cls = "age-P";
+    if (age.includes("18")) cls = "age-18";
+    else if (age.includes("16")) cls = "age-16";
+    else if (age.includes("13")) cls = "age-13";
+    return `<span class="age-badge ${cls}">${age}</span>`;
+}
+
+function escapeHtml(value) {
+    return String(value)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#39;");
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,462 @@
+> Task :compileJava UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :resolveMainClassName
+
+> Task :bootRun
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.3)
+
+2026-04-05T09:25:13.393+07:00  INFO 33068 --- [Cinema] [           main] com.example.demo.CinemaApplication       : Starting CinemaApplication using Java 24.0.2 with PID 33068 (E:\Spring\build\classes\java\main started by tbih8 in E:\Spring)
+2026-04-05T09:25:13.397+07:00  INFO 33068 --- [Cinema] [           main] com.example.demo.CinemaApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-04-05T09:25:14.357+07:00  INFO 33068 --- [Cinema] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-05T09:25:14.489+07:00  INFO 33068 --- [Cinema] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 115 ms. Found 13 JPA repository interfaces.
+2026-04-05T09:25:15.254+07:00  INFO 33068 --- [Cinema] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-04-05T09:25:15.283+07:00  INFO 33068 --- [Cinema] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-05T09:25:15.283+07:00  INFO 33068 --- [Cinema] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-04-05T09:25:15.406+07:00  INFO 33068 --- [Cinema] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1937 ms
+2026-04-05T09:25:15.814+07:00  INFO 33068 --- [Cinema] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-05T09:25:15.940+07:00  INFO 33068 --- [Cinema] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-04-05T09:25:16.869+07:00  INFO 33068 --- [Cinema] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-05T09:25:16.938+07:00  INFO 33068 --- [Cinema] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-05T09:25:18.009+07:00  INFO 33068 --- [Cinema] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: 24c5934d-1f9c-4caf-9af0-435e04e6280d
+2026-04-05T09:25:18.011+07:00  INFO 33068 --- [Cinema] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-05T09:25:18.642+07:00  WARN 33068 --- [Cinema] [           main] org.hibernate.orm.deprecation            : HHH90000025: SQLServerDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-05T09:25:18.684+07:00  INFO 33068 --- [Cinema] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:sqlserver://localhost:1433;concatNullYieldsNull=ON;quotedIdentifier=ON;connectRetryInterval=10;connectRetryCount=1;maxResultBuffer=-1;sendTemporalDataTypesAsStringForBulkCopy=true;delayLoadingLobs=true;useFmtOnly=false;vectorTypeSupport=v1;cacheBulkCopyMetadata=false;bulkCopyForBatchInsertAllowEncryptedValueModifications=false;bulkCopyForBatchInsertTableLock=false;bulkCopyForBatchInsertKeepNulls=false;bulkCopyForBatchInsertKeepIdentity=false;bulkCopyForBatchInsertFireTriggers=false;bulkCopyForBatchInsertCheckConstraints=false;bulkCopyForBatchInsertBatchSize=0;useBulkCopyForBatchInsert=false;cancelQueryTimeout=-1;sslProtocol=TLS;calcBigDecimalPrecision=false;useDefaultJaasConfig=false;jaasConfigurationName=SQLJDBCDriver;statementPoolingCacheSize=0;serverPreparedStatementDiscardThreshold=10;enablePrepareOnFirstPreparedStatementCall=false;fips=false;socketTimeout=0;authentication=NotSpecified;authenticationScheme=nativeAuthentication;xopenStates=false;datetimeParameterType=datetime2;sendTimeAsDatetime=true;replication=false;trustStoreType=JKS;trustServerCertificate=true;TransparentNetworkIPResolution=true;iPAddressPreference=IPv4First;serverNameAsACE=false;sendStringParametersAsUnicode=true;selectMethod=direct;responseBuffering=adaptive;queryTimeout=-1;packetSize=8000;multiSubnetFailover=false;loginTimeout=30;lockTimeout=-1;lastUpdateCount=true;useDefaultGSSCredential=false;prepareMethod=prepexec;encrypt=true;disableStatementPooling=true;databaseName=QuanLyRapPhim;columnEncryptionSetting=Disabled;applicationName=Microsoft JDBC Driver for SQL Server;applicationIntent=readwrite;]
+	Database driver: Microsoft JDBC Driver 13.2 for SQL Server
+	Database dialect: SQLServerDialect
+	Database version: 17.0
+	Default catalog/schema: QuanLyRapPhim/dbo
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 128
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-05T09:25:21.005+07:00  INFO 33068 --- [Cinema] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-05T09:25:22.132+07:00  INFO 33068 --- [Cinema] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-05T09:25:22.242+07:00  INFO 33068 --- [Cinema] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-05T09:25:22.741+07:00  INFO 33068 --- [Cinema] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-04-05T09:25:24.024+07:00  INFO 33068 --- [Cinema] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-04-05T09:25:24.033+07:00  INFO 33068 --- [Cinema] [           main] com.example.demo.CinemaApplication       : Started CinemaApplication in 11.179 seconds (process running for 11.721)
+2026-04-05T09:25:42.316+07:00  INFO 33068 --- [Cinema] [nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-05T09:25:42.316+07:00  INFO 33068 --- [Cinema] [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-05T09:25:42.317+07:00  INFO 33068 --- [Cinema] [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-04-05T09:25:42.329+07:00  WARN 33068 --- [Cinema] [nio-8080-exec-2] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/api/auth/login' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+Hibernate: select nd1_0.id,nd1_0.password,nd1_0.role,nd1_0.username from NguoiDung nd1_0 where nd1_0.username=?
+Hibernate: select top (?) nd1_0.id from NguoiDung nd1_0 where nd1_0.username=?
+Hibernate: insert into NguoiDung (password,role,username) values (?,?,?)
+Hibernate: select top (?) kh1_0.MaKhachHang,kh1_0.TenKhachHang from KhachHang kh1_0 where kh1_0.TenKhachHang=?
+Hibernate: select count_big(*) from KhachHang kh1_0 where kh1_0.MaKhachHang=?
+Hibernate: select kh1_0.MaKhachHang,kh1_0.TenKhachHang from KhachHang kh1_0 where kh1_0.MaKhachHang=?
+Hibernate: insert into KhachHang (TenKhachHang,MaKhachHang) values (?,?)
+Hibernate: select nd1_0.id,nd1_0.password,nd1_0.role,nd1_0.username from NguoiDung nd1_0 where nd1_0.username=?
+Hibernate: select top (?) kh1_0.MaKhachHang,kh1_0.TenKhachHang from KhachHang kh1_0 where kh1_0.TenKhachHang=?
+Hibernate: select top (?) nd1_0.id from NguoiDung nd1_0 where nd1_0.username=?
+Hibernate: insert into NguoiDung (password,role,username) values (?,?,?)
+Hibernate: select top (?) kh1_0.MaKhachHang,kh1_0.TenKhachHang from KhachHang kh1_0 where kh1_0.TenKhachHang=?
+Hibernate: select count_big(*) from KhachHang kh1_0 where kh1_0.MaKhachHang=?
+Hibernate: select kh1_0.MaKhachHang,kh1_0.TenKhachHang from KhachHang kh1_0 where kh1_0.MaKhachHang=?
+Hibernate: insert into KhachHang (TenKhachHang,MaKhachHang) values (?,?)
+Hibernate: select nd1_0.id,nd1_0.password,nd1_0.role,nd1_0.username from NguoiDung nd1_0 where nd1_0.username=?
+Hibernate: select top (?) kh1_0.MaKhachHang,kh1_0.TenKhachHang from KhachHang kh1_0 where kh1_0.TenKhachHang=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select nd1_0.id,nd1_0.password,nd1_0.role,nd1_0.username from NguoiDung nd1_0 where nd1_0.username=?
+Hibernate: select count_big(*) from KhachHang kh1_0 where kh1_0.MaKhachHang=?
+Hibernate: select hd1_0.MaDon,hd1_0.MaKhachHang,hd1_0.PhuongThucThanhToan,hd1_0.ThoiGianDat,hd1_0.ThoiGianThanhToan,hd1_0.TongTien,hd1_0.TrangThai from HoaDon hd1_0 where hd1_0.MaKhachHang=? order by hd1_0.ThoiGianDat desc
+Hibernate: select nd1_0.id,nd1_0.password,nd1_0.role,nd1_0.username from NguoiDung nd1_0 where nd1_0.username=?
+Hibernate: select count_big(*) from KhachHang kh1_0 where kh1_0.MaKhachHang=?
+Hibernate: select hd1_0.MaDon,hd1_0.MaKhachHang,hd1_0.PhuongThucThanhToan,hd1_0.ThoiGianDat,hd1_0.ThoiGianThanhToan,hd1_0.TongTien,hd1_0.TrangThai from HoaDon hd1_0 where hd1_0.MaKhachHang=? order by hd1_0.ThoiGianDat desc
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tp1_0.MaThanhPho,tp1_0.TenThanhPho from ThanhPho tp1_0
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tp1_0.MaThanhPho,tp1_0.TenThanhPho from ThanhPho tp1_0
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaThanhPho=? order by r1_0.TenRap
+Hibernate: select tp1_0.MaThanhPho,tp1_0.TenThanhPho from ThanhPho tp1_0 where tp1_0.MaThanhPho=?
+Hibernate:     SELECT DISTINCT
+        p.MaPhim,
+        p.TenPhim,
+        p.MoTa,
+        p.Poster,
+        p.ThoiLuong,
+        p.NgayKhoiChieu,
+        p.DoTuoiPhuHop,
+        p.NgonNgu
+    FROM Phim p
+    JOIN SuatChieu s ON p.MaPhim = s.MaPhim
+    LEFT JOIN PhongChieu ph ON s.MaPhong = ph.MaPhong
+    WHERE s.NgayChieu = ?
+      AND (ph.MaRap = ? OR s.MaRap = ?)
+    ORDER BY p.TenPhim
+
+Hibernate:     SELECT
+        s.MaSuat,
+        CONVERT(VARCHAR(5), s.GioChieu, 108) AS GioChieu,
+        s.Gia,
+        ph.MaPhong,
+        ph.TenPhong,
+        lp.TenLoaiPhong,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) AS TongGhe,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) - (
+            SELECT COUNT(*)
+            FROM Ve v
+            JOIN HoaDon hd ON hd.MaDon = v.MaDon
+            WHERE v.MaSuat = s.MaSuat
+              AND (
+                v.TrangThaiVe = 'DA_THANH_TOAN'
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('CHUA_THANH_TOAN', N'Ch? thanh to�n')
+                    AND hd.ThoiGianDat >= DATEADD(MINUTE, -10, GETDATE())
+                )
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('DA_THANH_TOAN', N'�? thanh to�n')
+                )
+              )
+        ) AS SoGheTrong
+    FROM SuatChieu s
+    LEFT JOIN PhongChieu ph ON s.MaPhong = ph.MaPhong
+    LEFT JOIN LoaiPhong lp ON ph.MaLoaiPhong = lp.MaLoaiPhong
+    WHERE s.MaPhim = ?
+      AND s.NgayChieu = ?
+      AND (ph.MaRap = ? OR s.MaRap = ?)
+    ORDER BY s.GioChieu
+
+Hibernate: select nd1_0.id,nd1_0.password,nd1_0.role,nd1_0.username from NguoiDung nd1_0 where nd1_0.username=?
+Hibernate: select nd1_0.id,nd1_0.password,nd1_0.role,nd1_0.username from NguoiDung nd1_0 where nd1_0.username=?
+Hibernate: select sc1_0.MaSuat,sc1_0.Gia,sc1_0.GioChieu,sc1_0.NgayChieu,sc1_0.MaPhim,sc1_0.MaPhong from SuatChieu sc1_0 where sc1_0.MaSuat=?
+Hibernate: select sc1_0.MaSuat,sc1_0.Gia,sc1_0.GioChieu,sc1_0.NgayChieu,sc1_0.MaPhim,sc1_0.MaPhong from SuatChieu sc1_0 where sc1_0.MaSuat=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaPhong=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaRap=?
+Hibernate: select nd1_0.id,nd1_0.password,nd1_0.role,nd1_0.username from NguoiDung nd1_0 where nd1_0.username=?
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,v1_0.GiaVeCoBan,v1_0.MaDon,v1_0.PhuThu,v1_0.MaSuat,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 where v1_0.MaSuat=? and v1_0.TrangThaiVe in (?,?)
+Hibernate: select sc1_0.MaSuat,sc1_0.Gia,sc1_0.GioChieu,sc1_0.NgayChieu,sc1_0.MaPhim,sc1_0.MaPhong from SuatChieu sc1_0 where sc1_0.MaSuat=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaRap=?
+Hibernate: select lg1_0.MaLoaiGhe,lg1_0.GiaPhuThu,lg1_0.TenLoaiGhe from LoaiGhe lg1_0 where lg1_0.MaLoaiGhe=?
+Hibernate: select nd1_0.id,nd1_0.password,nd1_0.role,nd1_0.username from NguoiDung nd1_0 where nd1_0.username=?
+Hibernate: select sc1_0.MaSuat,sc1_0.Gia,sc1_0.GioChieu,sc1_0.NgayChieu,sc1_0.MaPhim,sc1_0.MaPhong from SuatChieu sc1_0 where sc1_0.MaSuat=?
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaPhong=?
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,v1_0.GiaVeCoBan,v1_0.MaDon,v1_0.PhuThu,v1_0.MaSuat,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 where v1_0.MaSuat=? and v1_0.TrangThaiVe in (?,?)
+Hibernate: select lg1_0.MaLoaiGhe,lg1_0.GiaPhuThu,lg1_0.TenLoaiGhe from LoaiGhe lg1_0 where lg1_0.MaLoaiGhe=?
+Hibernate: select nd1_0.id,nd1_0.password,nd1_0.role,nd1_0.username from NguoiDung nd1_0 where nd1_0.username=?
+Hibernate: select nd1_0.id,nd1_0.password,nd1_0.role,nd1_0.username from NguoiDung nd1_0 where nd1_0.username=?
+Hibernate: select sc1_0.MaSuat,sc1_0.Gia,sc1_0.GioChieu,sc1_0.NgayChieu,sc1_0.MaPhim,sc1_0.MaPhong from SuatChieu sc1_0 where sc1_0.MaSuat=?
+Hibernate: select sc1_0.MaSuat,sc1_0.Gia,sc1_0.GioChieu,sc1_0.NgayChieu,sc1_0.MaPhim,sc1_0.MaPhong from SuatChieu sc1_0 where sc1_0.MaSuat=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaPhong=?
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,v1_0.GiaVeCoBan,v1_0.MaDon,v1_0.PhuThu,v1_0.MaSuat,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 where v1_0.MaSuat=? and v1_0.TrangThaiVe in (?,?)
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select lg1_0.MaLoaiGhe,lg1_0.GiaPhuThu,lg1_0.TenLoaiGhe from LoaiGhe lg1_0 where lg1_0.MaLoaiGhe=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaRap=?
+Hibernate: select nd1_0.id,nd1_0.password,nd1_0.role,nd1_0.username from NguoiDung nd1_0 where nd1_0.username=?
+Hibernate: select nd1_0.id,nd1_0.password,nd1_0.role,nd1_0.username from NguoiDung nd1_0 where nd1_0.username=?
+Hibernate: select sc1_0.MaSuat,sc1_0.Gia,sc1_0.GioChieu,sc1_0.NgayChieu,sc1_0.MaPhim,sc1_0.MaPhong from SuatChieu sc1_0 where sc1_0.MaSuat=?
+Hibernate: select sc1_0.MaSuat,sc1_0.Gia,sc1_0.GioChieu,sc1_0.NgayChieu,sc1_0.MaPhim,sc1_0.MaPhong from SuatChieu sc1_0 where sc1_0.MaSuat=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaPhong=?
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,v1_0.GiaVeCoBan,v1_0.MaDon,v1_0.PhuThu,v1_0.MaSuat,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 where v1_0.MaSuat=? and v1_0.TrangThaiVe in (?,?)
+Hibernate: select lg1_0.MaLoaiGhe,lg1_0.GiaPhuThu,lg1_0.TenLoaiGhe from LoaiGhe lg1_0 where lg1_0.MaLoaiGhe=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaRap=?
+Hibernate: select nd1_0.id,nd1_0.password,nd1_0.role,nd1_0.username from NguoiDung nd1_0 where nd1_0.username=?
+Hibernate: select count_big(*) from KhachHang kh1_0 where kh1_0.MaKhachHang=?
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,v1_0.GiaVeCoBan,v1_0.MaDon,v1_0.PhuThu,v1_0.MaSuat,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 left join HoaDon hd1_0 on hd1_0.MaDon=v1_0.MaDon where v1_0.MaSuat=? and hd1_0.TrangThai=? and hd1_0.ThoiGianDat<?
+Hibernate: select sc1_0.MaSuat,sc1_0.Gia,sc1_0.GioChieu,sc1_0.NgayChieu,sc1_0.MaPhim,sc1_0.MaPhong from SuatChieu sc1_0 where sc1_0.MaSuat=?
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe in (?,?)
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,v1_0.GiaVeCoBan,v1_0.MaDon,v1_0.PhuThu,v1_0.MaSuat,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 where v1_0.MaSuat=? and v1_0.MaGhe in (?,?) and v1_0.TrangThaiVe in (?,?)
+Hibernate: select count_big(g1_0.MaGhe) from Ghe g1_0 where g1_0.MaPhong=?
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,v1_0.GiaVeCoBan,v1_0.MaDon,v1_0.PhuThu,v1_0.MaSuat,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 where v1_0.MaSuat=? and v1_0.TrangThaiVe in (?,?)
+Hibernate: select count_big(*) from HoaDon hd1_0 where hd1_0.MaDon=?
+Hibernate: select kh1_0.MaKhachHang,kh1_0.TenKhachHang from KhachHang kh1_0 where kh1_0.MaKhachHang=?
+Hibernate: select lg1_0.MaLoaiGhe,lg1_0.GiaPhuThu,lg1_0.TenLoaiGhe from LoaiGhe lg1_0 where lg1_0.MaLoaiGhe=?
+Hibernate: select hd1_0.MaDon,hd1_0.MaKhachHang,hd1_0.PhuongThucThanhToan,hd1_0.ThoiGianDat,hd1_0.ThoiGianThanhToan,hd1_0.TongTien,hd1_0.TrangThai from HoaDon hd1_0 where hd1_0.MaDon=?
+Hibernate: select count_big(*) from Ve v1_0 where v1_0.MaVe=?
+Hibernate: select count_big(*) from Ve v1_0 where v1_0.MaVe=?
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang,v1_0.GiaVeCoBan,v1_0.MaDon,hd1_0.MaDon,hd1_0.MaKhachHang,hd1_0.PhuongThucThanhToan,hd1_0.ThoiGianDat,hd1_0.ThoiGianThanhToan,hd1_0.TongTien,hd1_0.TrangThai,v1_0.PhuThu,v1_0.MaSuat,sc1_0.MaSuat,sc1_0.Gia,sc1_0.GioChieu,sc1_0.NgayChieu,sc1_0.MaPhim,sc1_0.MaPhong,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 join Ghe g1_0 on g1_0.MaGhe=v1_0.MaGhe join HoaDon hd1_0 on hd1_0.MaDon=v1_0.MaDon join SuatChieu sc1_0 on sc1_0.MaSuat=v1_0.MaSuat where v1_0.MaVe=?
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang,v1_0.GiaVeCoBan,v1_0.MaDon,hd1_0.MaDon,hd1_0.MaKhachHang,hd1_0.PhuongThucThanhToan,hd1_0.ThoiGianDat,hd1_0.ThoiGianThanhToan,hd1_0.TongTien,hd1_0.TrangThai,v1_0.PhuThu,v1_0.MaSuat,sc1_0.MaSuat,sc1_0.Gia,sc1_0.GioChieu,sc1_0.NgayChieu,sc1_0.MaPhim,sc1_0.MaPhong,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 join Ghe g1_0 on g1_0.MaGhe=v1_0.MaGhe join HoaDon hd1_0 on hd1_0.MaDon=v1_0.MaDon join SuatChieu sc1_0 on sc1_0.MaSuat=v1_0.MaSuat where v1_0.MaVe=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select count_big(g1_0.MaGhe) from Ghe g1_0 where g1_0.MaPhong=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaRap=?
+Hibernate: insert into HoaDon (MaKhachHang,PhuongThucThanhToan,ThoiGianDat,ThoiGianThanhToan,TongTien,TrangThai,MaDon) values (?,?,?,?,?,?,?)
+Hibernate: insert into Ve (MaGhe,GiaVeCoBan,MaDon,PhuThu,MaSuat,ThanhTien,TrangThaiVe,MaVe) values (?,?,?,?,?,?,?,?)
+Hibernate: insert into Ve (MaGhe,GiaVeCoBan,MaDon,PhuThu,MaSuat,ThanhTien,TrangThaiVe,MaVe) values (?,?,?,?,?,?,?,?)
+Hibernate: select nd1_0.id,nd1_0.password,nd1_0.role,nd1_0.username from NguoiDung nd1_0 where nd1_0.username=?
+Hibernate: select hd1_0.MaDon,hd1_0.MaKhachHang,hd1_0.PhuongThucThanhToan,hd1_0.ThoiGianDat,hd1_0.ThoiGianThanhToan,hd1_0.TongTien,hd1_0.TrangThai from HoaDon hd1_0 where hd1_0.MaDon=?
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,v1_0.GiaVeCoBan,v1_0.MaDon,v1_0.PhuThu,v1_0.MaSuat,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 left join Ghe g1_0 on g1_0.MaGhe=v1_0.MaGhe where v1_0.MaDon=? order by g1_0.SoHang,g1_0.SoCot
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select sc1_0.MaSuat,sc1_0.Gia,sc1_0.GioChieu,sc1_0.NgayChieu,sc1_0.MaPhim,sc1_0.MaPhong from SuatChieu sc1_0 where sc1_0.MaSuat=?
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select count_big(g1_0.MaGhe) from Ghe g1_0 where g1_0.MaPhong=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaRap=?
+Hibernate: select lg1_0.MaLoaiGhe,lg1_0.GiaPhuThu,lg1_0.TenLoaiGhe from LoaiGhe lg1_0 where lg1_0.MaLoaiGhe=?
+Hibernate: update HoaDon set MaKhachHang=?,PhuongThucThanhToan=?,ThoiGianDat=?,ThoiGianThanhToan=?,TongTien=?,TrangThai=? where MaDon=?
+Hibernate: update Ve set MaGhe=?,GiaVeCoBan=?,MaDon=?,PhuThu=?,MaSuat=?,ThanhTien=?,TrangThaiVe=? where MaVe=?
+Hibernate: update Ve set MaGhe=?,GiaVeCoBan=?,MaDon=?,PhuThu=?,MaSuat=?,ThanhTien=?,TrangThaiVe=? where MaVe=?
+Hibernate: select nd1_0.id,nd1_0.password,nd1_0.role,nd1_0.username from NguoiDung nd1_0 where nd1_0.username=?
+Hibernate: select hd1_0.MaDon,hd1_0.MaKhachHang,hd1_0.PhuongThucThanhToan,hd1_0.ThoiGianDat,hd1_0.ThoiGianThanhToan,hd1_0.TongTien,hd1_0.TrangThai from HoaDon hd1_0 where hd1_0.MaDon=?
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,v1_0.GiaVeCoBan,v1_0.MaDon,v1_0.PhuThu,v1_0.MaSuat,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 left join Ghe g1_0 on g1_0.MaGhe=v1_0.MaGhe where v1_0.MaDon=? order by g1_0.SoHang,g1_0.SoCot
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select sc1_0.MaSuat,sc1_0.Gia,sc1_0.GioChieu,sc1_0.NgayChieu,sc1_0.MaPhim,sc1_0.MaPhong from SuatChieu sc1_0 where sc1_0.MaSuat=?
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select count_big(g1_0.MaGhe) from Ghe g1_0 where g1_0.MaPhong=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaRap=?
+Hibernate: select lg1_0.MaLoaiGhe,lg1_0.GiaPhuThu,lg1_0.TenLoaiGhe from LoaiGhe lg1_0 where lg1_0.MaLoaiGhe=?
+Hibernate: select nd1_0.id,nd1_0.password,nd1_0.role,nd1_0.username from NguoiDung nd1_0 where nd1_0.username=?
+Hibernate: select hd1_0.MaDon,hd1_0.MaKhachHang,hd1_0.PhuongThucThanhToan,hd1_0.ThoiGianDat,hd1_0.ThoiGianThanhToan,hd1_0.TongTien,hd1_0.TrangThai from HoaDon hd1_0 where hd1_0.MaDon=?
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,v1_0.GiaVeCoBan,v1_0.MaDon,v1_0.PhuThu,v1_0.MaSuat,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 left join Ghe g1_0 on g1_0.MaGhe=v1_0.MaGhe where v1_0.MaDon=? order by g1_0.SoHang,g1_0.SoCot
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select sc1_0.MaSuat,sc1_0.Gia,sc1_0.GioChieu,sc1_0.NgayChieu,sc1_0.MaPhim,sc1_0.MaPhong from SuatChieu sc1_0 where sc1_0.MaSuat=?
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select count_big(g1_0.MaGhe) from Ghe g1_0 where g1_0.MaPhong=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaRap=?
+Hibernate: select lg1_0.MaLoaiGhe,lg1_0.GiaPhuThu,lg1_0.TenLoaiGhe from LoaiGhe lg1_0 where lg1_0.MaLoaiGhe=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select nd1_0.id,nd1_0.password,nd1_0.role,nd1_0.username from NguoiDung nd1_0 where nd1_0.username=?
+Hibernate: select count_big(*) from KhachHang kh1_0 where kh1_0.MaKhachHang=?
+Hibernate: select hd1_0.MaDon,hd1_0.MaKhachHang,hd1_0.PhuongThucThanhToan,hd1_0.ThoiGianDat,hd1_0.ThoiGianThanhToan,hd1_0.TongTien,hd1_0.TrangThai from HoaDon hd1_0 where hd1_0.MaKhachHang=? order by hd1_0.ThoiGianDat desc
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,v1_0.GiaVeCoBan,v1_0.MaDon,v1_0.PhuThu,v1_0.MaSuat,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 left join Ghe g1_0 on g1_0.MaGhe=v1_0.MaGhe where v1_0.MaDon=? order by g1_0.SoHang,g1_0.SoCot
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select sc1_0.MaSuat,sc1_0.Gia,sc1_0.GioChieu,sc1_0.NgayChieu,sc1_0.MaPhim,sc1_0.MaPhong from SuatChieu sc1_0 where sc1_0.MaSuat=?
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select count_big(g1_0.MaGhe) from Ghe g1_0 where g1_0.MaPhong=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaRap=?
+Hibernate: select lg1_0.MaLoaiGhe,lg1_0.GiaPhuThu,lg1_0.TenLoaiGhe from LoaiGhe lg1_0 where lg1_0.MaLoaiGhe=?
+Hibernate: select nd1_0.id,nd1_0.password,nd1_0.role,nd1_0.username from NguoiDung nd1_0 where nd1_0.username=?
+Hibernate: select count_big(*) from KhachHang kh1_0 where kh1_0.MaKhachHang=?
+Hibernate: select hd1_0.MaDon,hd1_0.MaKhachHang,hd1_0.PhuongThucThanhToan,hd1_0.ThoiGianDat,hd1_0.ThoiGianThanhToan,hd1_0.TongTien,hd1_0.TrangThai from HoaDon hd1_0 where hd1_0.MaKhachHang=? order by hd1_0.ThoiGianDat desc
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,v1_0.GiaVeCoBan,v1_0.MaDon,v1_0.PhuThu,v1_0.MaSuat,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 left join Ghe g1_0 on g1_0.MaGhe=v1_0.MaGhe where v1_0.MaDon=? order by g1_0.SoHang,g1_0.SoCot
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select sc1_0.MaSuat,sc1_0.Gia,sc1_0.GioChieu,sc1_0.NgayChieu,sc1_0.MaPhim,sc1_0.MaPhong from SuatChieu sc1_0 where sc1_0.MaSuat=?
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select count_big(g1_0.MaGhe) from Ghe g1_0 where g1_0.MaPhong=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaRap=?
+Hibernate: select lg1_0.MaLoaiGhe,lg1_0.GiaPhuThu,lg1_0.TenLoaiGhe from LoaiGhe lg1_0 where lg1_0.MaLoaiGhe=?
+Hibernate: select nd1_0.id,nd1_0.password,nd1_0.role,nd1_0.username from NguoiDung nd1_0 where nd1_0.username=?
+Hibernate: select hd1_0.MaDon,hd1_0.MaKhachHang,hd1_0.PhuongThucThanhToan,hd1_0.ThoiGianDat,hd1_0.ThoiGianThanhToan,hd1_0.TongTien,hd1_0.TrangThai from HoaDon hd1_0 where hd1_0.MaDon=?
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,v1_0.GiaVeCoBan,v1_0.MaDon,v1_0.PhuThu,v1_0.MaSuat,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 left join Ghe g1_0 on g1_0.MaGhe=v1_0.MaGhe where v1_0.MaDon=? order by g1_0.SoHang,g1_0.SoCot
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select sc1_0.MaSuat,sc1_0.Gia,sc1_0.GioChieu,sc1_0.NgayChieu,sc1_0.MaPhim,sc1_0.MaPhong from SuatChieu sc1_0 where sc1_0.MaSuat=?
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select count_big(g1_0.MaGhe) from Ghe g1_0 where g1_0.MaPhong=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaRap=?
+Hibernate: select lg1_0.MaLoaiGhe,lg1_0.GiaPhuThu,lg1_0.TenLoaiGhe from LoaiGhe lg1_0 where lg1_0.MaLoaiGhe=?
+Hibernate: update HoaDon set MaKhachHang=?,PhuongThucThanhToan=?,ThoiGianDat=?,ThoiGianThanhToan=?,TongTien=?,TrangThai=? where MaDon=?
+Hibernate: update Ve set MaGhe=?,GiaVeCoBan=?,MaDon=?,PhuThu=?,MaSuat=?,ThanhTien=?,TrangThaiVe=? where MaVe=?
+Hibernate: update Ve set MaGhe=?,GiaVeCoBan=?,MaDon=?,PhuThu=?,MaSuat=?,ThanhTien=?,TrangThaiVe=? where MaVe=?
+Hibernate: select nd1_0.id,nd1_0.password,nd1_0.role,nd1_0.username from NguoiDung nd1_0 where nd1_0.username=?
+Hibernate: select count_big(*) from KhachHang kh1_0 where kh1_0.MaKhachHang=?
+Hibernate: select hd1_0.MaDon,hd1_0.MaKhachHang,hd1_0.PhuongThucThanhToan,hd1_0.ThoiGianDat,hd1_0.ThoiGianThanhToan,hd1_0.TongTien,hd1_0.TrangThai from HoaDon hd1_0 where hd1_0.MaKhachHang=? order by hd1_0.ThoiGianDat desc
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,v1_0.GiaVeCoBan,v1_0.MaDon,v1_0.PhuThu,v1_0.MaSuat,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 left join Ghe g1_0 on g1_0.MaGhe=v1_0.MaGhe where v1_0.MaDon=? order by g1_0.SoHang,g1_0.SoCot
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select sc1_0.MaSuat,sc1_0.Gia,sc1_0.GioChieu,sc1_0.NgayChieu,sc1_0.MaPhim,sc1_0.MaPhong from SuatChieu sc1_0 where sc1_0.MaSuat=?
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select count_big(g1_0.MaGhe) from Ghe g1_0 where g1_0.MaPhong=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaRap=?
+Hibernate: select lg1_0.MaLoaiGhe,lg1_0.GiaPhuThu,lg1_0.TenLoaiGhe from LoaiGhe lg1_0 where lg1_0.MaLoaiGhe=?
+Hibernate: select top (?) nd1_0.id from NguoiDung nd1_0 where nd1_0.username=?
+Hibernate: insert into NguoiDung (password,role,username) values (?,?,?)
+Hibernate: select top (?) kh1_0.MaKhachHang,kh1_0.TenKhachHang from KhachHang kh1_0 where kh1_0.TenKhachHang=?
+Hibernate: select count_big(*) from KhachHang kh1_0 where kh1_0.MaKhachHang=?
+Hibernate: select kh1_0.MaKhachHang,kh1_0.TenKhachHang from KhachHang kh1_0 where kh1_0.MaKhachHang=?
+Hibernate: insert into KhachHang (TenKhachHang,MaKhachHang) values (?,?)
+^C

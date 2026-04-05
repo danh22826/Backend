@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTC Cinema – Chi Tiết Phim</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/chi-tiet-phim.css">
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<section class="movie-detail-hero" id="movieHero">
+    <div class="container">
+        <div class="loading-spinner">
+            <div class="spinner"></div>
+        </div>
+    </div>
+</section>
+
+<div class="gold-bar"></div>
+
+<nav class="breadcrumb-nav">
+    <div class="container breadcrumb-container">
+        <a href="index.html" class="breadcrumb-link">Trang chủ</a>
+        <span> / </span>
+        <a href="phim.html" class="breadcrumb-link">Phim</a>
+        <span> / </span>
+        <span id="breadcrumbMovie">Chi tiết phim</span>
+    </div>
+</nav>
+
+<section class="showtime-section">
+    <div class="container">
+        <h2 class="section-title">Lịch Chiếu</h2>
+
+        <div class="showtime-filters">
+            <select id="citySelect" class="form-control city-select">
+                <option value="">-- Chọn thành phố --</option>
+            </select>
+
+            <select id="rapSelect" class="form-control rap-select">
+                <option value="">-- Chọn rạp --</option>
+            </select>
+
+            <input type="date" id="dateSelect" class="form-control date-select">
+        </div>
+
+        <div id="showtimeList">
+            <div class="empty-state">
+                <i class="fas fa-calendar-alt"></i>
+                <h3>Vui lòng chọn thành phố và rạp để xem lịch chiếu</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="quick-actions"></div>
+<div id="site-footer"></div>
+
+<script src="js/shared.js" defer></script>
+<script src="js/TrangChu.js" defer></script>
+</body>
+</html>

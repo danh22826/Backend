@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UTC Cinema – Trang Chủ</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<!-- HERO BANNER SLIDER -->
+<section class="hero-section" id="heroSection">
+  <div class="hero-slider" id="heroSlider">
+    <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1800&q=80')">
+      <div class="hero-content">
+        <h2>Chào mừng đến UTC Cinema</h2>
+        <p>Trải nghiệm điện ảnh đỉnh cao – Đặt vé ngay hôm nay!</p>
+        <a href="mua-ve.html" class="btn btn-primary">MUA VÉ NGAY</a>
+      </div>
+    </div>
+    <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=1800&q=80')">
+      <div class="hero-content">
+        <h2>Phim Hot Tại Rạp</h2>
+        <p>Cập nhật những bộ phim bom tấn mới nhất</p>
+        <a href="phim.html" class="btn btn-primary">XEM PHIM</a>
+      </div>
+    </div>
+    <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=1800&q=80')">
+      <div class="hero-content">
+        <h2>Ưu Đãi Hấp Dẫn</h2>
+        <p>Nhiều khuyến mãi đặc biệt dành cho thành viên</p>
+        <a href="uu-dai.html" class="btn btn-gold">XEM ƯU ĐÃI</a>
+      </div>
+    </div>
+  </div>
+  <button class="hero-arrow hero-prev" onclick="heroSlide(-1)"><i class="fas fa-chevron-left"></i></button>
+  <button class="hero-arrow hero-next" onclick="heroSlide(1)"><i class="fas fa-chevron-right"></i></button>
+  <div class="hero-dots" id="heroDots"></div>
+</section>
+
+<div class="gold-bar"></div>
+
+<!-- QUICK BOOKING BAR -->
+<section style="background:var(--bg-beige);padding:20px 0;">
+  <div class="container" style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:center;">
+    <select id="qbCity" class="form-control" style="max-width:200px" onchange="qbLoadRaps()">
+      <option value="">-- Chọn thành phố --</option>
+    </select>
+    <select id="qbRap" class="form-control" style="max-width:200px" onchange="qbLoadMovies()">
+      <option value="">-- Chọn rạp --</option>
+    </select>
+    <input type="date" id="qbDate" class="form-control" style="max-width:180px" onchange="qbLoadMovies()">
+    <select id="qbMovie" class="form-control" style="max-width:240px">
+      <option value="">-- Chọn phim --</option>
+    </select>
+    <button class="btn btn-primary" onclick="qbGo()">MUA VÉ NGAY</button>
+  </div>
+</section>
+
+<!-- MOVIES SECTION -->
+<section style="padding:40px 0;">
+  <div class="container">
+    <h2 class="section-title text-center" style="text-align:center">Phim Đang Chiếu</h2>
+    <div class="movie-grid" id="movieGrid">
+      <div class="loading-spinner"><div class="spinner"></div></div>
+    </div>
+    <div style="text-align:center;margin-top:32px;">
+      <a href="phim.html" class="btn btn-outline">Xem tất cả phim &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROMOTIONS PREVIEW -->
+<section style="background:var(--bg-beige);padding:40px 0;">
+  <div class="container">
+    <h2 class="section-title text-center" style="text-align:center">Ưu Đãi Nổi Bật</h2>
+    <div class="gift-grid" id="promoGrid">
+      <div class="gift-card">
+        <div class="gift-card-img" style="background:linear-gradient(135deg,#e31837,#8b1528);display:flex;align-items:center;justify-content:center;">
+          <span style="color:#fff;font-size:1.5rem;font-weight:900;font-family:var(--font-heading)">MOVIE<br>GIFT TICKET</span>
+        </div>
+        <div class="gift-card-body">
+          <h4>Vé Super Plex</h4>
+          <p class="gift-expiry">Hạn sử dụng: 12 tháng</p>
+          <p class="gift-price">150.000₫</p>
+        </div>
+      </div>
+      <div class="gift-card">
+        <div class="gift-card-img" style="background:#1a1a1a;display:flex;align-items:center;justify-content:center;">
+          <span style="color:#c8a96e;font-size:1.3rem;font-weight:700;font-family:var(--font-heading)">CHARLOTTE</span>
+        </div>
+        <div class="gift-card-body">
+          <h4>Vé Charlotte VIP</h4>
+          <p class="gift-expiry">Hạn sử dụng: 12 tháng</p>
+          <p class="gift-price">370.000₫</p>
+        </div>
+      </div>
+      <div class="gift-card">
+        <div class="gift-card-img" style="background:linear-gradient(135deg,#f59e0b,#d97706);display:flex;align-items:center;justify-content:center;">
+          <span style="color:#fff;font-size:1.3rem;font-weight:900;font-family:var(--font-heading)">CINE<br>COMFORT</span>
+        </div>
+        <div class="gift-card-body">
+          <h4>Vé Cine Comfort</h4>
+          <p class="gift-expiry">Hạn sử dụng: 12 tháng</p>
+          <p class="gift-price">190.000₫</p>
+        </div>
+      </div>
+      <div class="gift-card">
+        <div class="gift-card-img" style="background:linear-gradient(135deg,#3b82f6,#1e40af);display:flex;align-items:center;justify-content:center;">
+          <span style="color:#fff;font-size:1.3rem;font-weight:900;font-family:var(--font-heading)">PHIM 2D</span>
+        </div>
+        <div class="gift-card-body">
+          <h4>Vé xem phim 2D</h4>
+          <p class="gift-expiry">Hạn sử dụng: 12 tháng</p>
+          <p class="gift-price">130.000₫</p>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:32px;">
+      <a href="uu-dai.html" class="btn btn-outline">Xem tất cả ưu đãi &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<div id="quick-actions"></div>
+<div id="site-footer"></div>
+
+<script src="js/shared.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  initPage('home');
+  loadBannerSlider();
+  loadMoviesHome();
+  loadQuickBooking();
+  document.getElementById('qbDate').value = formatISODate(new Date());
+});
+
+/* ——— HERO SLIDER ——— */
+let heroIdx = 0, heroTimer;
+function loadBannerSlider() {
+  const slides = document.querySelectorAll('.hero-slide');
+  const dotsEl = document.getElementById('heroDots');
+  slides.forEach((_, i) => {
+    const dot = document.createElement('span');
+    dot.className = 'hero-dot' + (i === 0 ? ' active' : '');
+    dot.onclick = () => goHero(i);
+    dotsEl.appendChild(dot);
+  });
+  autoHero();
+}
+function goHero(i) {
+  const slides = document.querySelectorAll('.hero-slide');
+  heroIdx = ((i % slides.length) + slides.length) % slides.length;
+  document.getElementById('heroSlider').style.transform = `translateX(-${heroIdx * 100}%)`;
+  document.querySelectorAll('.hero-dot').forEach((d, j) => d.classList.toggle('active', j === heroIdx));
+}
+function heroSlide(dir) { clearInterval(heroTimer); goHero(heroIdx + dir); autoHero(); }
+function autoHero() { heroTimer = setInterval(() => goHero(heroIdx + 1), 5000); }
+
+/* ——— MOVIES ——— */
+function getPosterUrl(poster) {
+  if (!poster || String(poster).trim() === '') {
+    return 'http://localhost:8080/poster/default.jpg';
+  }
+
+  const cleanPoster = String(poster).trim();
+
+  if (cleanPoster.startsWith('http://') || cleanPoster.startsWith('https://')) {
+    return cleanPoster;
+  }
+
+  if (cleanPoster.startsWith('/')) {
+    return `http://localhost:8080${cleanPoster}`;
+  }
+
+  return `http://localhost:8080/poster/${cleanPoster}`;
+}
+async function loadMoviesHome() {
+  try {
+    const movies = await apiFetch('/phim');
+    const grid = document.getElementById('movieGrid');
+
+    if (!movies.length) {
+      grid.innerHTML = '<div class="empty-state"><i class="fas fa-film"></i><h3>Chưa có phim nào</h3></div>';
+      return;
+    }
+
+    const LIMIT_HOME = 10;
+
+    grid.innerHTML = movies.slice(0, LIMIT_HOME).map(m => `
+      <a href="chi-tiet-phim.html?id=${encodeURIComponent(m.maPhim)}" class="movie-card">
+        <div class="movie-card-poster">
+          <img
+            src="${getPosterUrl(m.poster)}"
+            alt="${escapeHtml(m.tenPhim)}"
+            loading="lazy"
+            onerror="this.onerror=null;this.src='http://localhost:8080/poster/default.jpg';"
+          >
+          <div class="movie-card-overlay">
+            <span class="btn btn-primary">MUA VÉ</span>
+          </div>
+        </div>
+        <div class="movie-card-body">
+          <h4>${escapeHtml(m.tenPhim)}</h4>
+          <div class="card-meta">
+            ${getAgeBadge(m.doTuoiPhuHop)}
+            <span>${m.thoiLuong || '?'} phút</span>
+          </div>
+        </div>
+      </a>
+    `).join('');
+
+  } catch (e) {
+    console.error(e);
+  }
+}
+
+/* ——— QUICK BOOKING BAR ——— */
+async function loadQuickBooking() {
+  try {
+    const cities = await apiFetch('/thanh-pho');
+    const sel = document.getElementById('qbCity');
+    cities.forEach(c => {
+      const o = document.createElement('option');
+      o.value = c.maThanhPho; o.textContent = c.tenThanhPho;
+      sel.appendChild(o);
+    });
+  } catch(e) {}
+}
+async function qbLoadRaps() {
+  const city = document.getElementById('qbCity').value;
+  const sel = document.getElementById('qbRap');
+  sel.innerHTML = '<option value="">-- Chọn rạp --</option>';
+  if (!city) return;
+  try {
+    const raps = await apiFetch('/rap?maThanhPho=' + encodeURIComponent(city));
+    raps.forEach(r => {
+      const o = document.createElement('option');
+      o.value = r.maRap; o.textContent = r.tenRap;
+      sel.appendChild(o);
+    });
+  } catch(e) {}
+}
+async function qbLoadMovies() {
+  const rap = document.getElementById('qbRap').value;
+  const date = document.getElementById('qbDate').value;
+  const sel = document.getElementById('qbMovie');
+  sel.innerHTML = '<option value="">-- Chọn phim --</option>';
+  if (!rap || !date) return;
+  try {
+    const movies = await apiFetch(`/suat-chieu/tim-phim?maRap=${encodeURIComponent(rap)}&ngay=${date}`);
+    movies.forEach(m => {
+      const o = document.createElement('option');
+      o.value = m.maPhim; o.textContent = m.tenPhim;
+      sel.appendChild(o);
+    });
+  } catch(e) {}
+}
+function qbGo() {
+  const rap = document.getElementById('qbRap').value;
+  const date = document.getElementById('qbDate').value;
+  const movie = document.getElementById('qbMovie').value;
+  if (!rap) { showToast('Vui lòng chọn rạp','error'); return; }
+  let url = `mua-ve.html?rap=${encodeURIComponent(rap)}&ngay=${date}`;
+  if (movie) url += `&phim=${encodeURIComponent(movie)}`;
+  window.location.href = url;
+}
+</script>
+</body>
+</html>

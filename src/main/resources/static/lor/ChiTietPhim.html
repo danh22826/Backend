@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTC Cinema – Chi Tiết Phim</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/chi-tiet-phim.css">
+</head>
+<body class="bg-beige">
+
+<div id="site-header"></div>
+<div class="gold-bar"></div>
+
+<div class="movie-backdrop" id="movieBackdrop">
+    <div class="backdrop-overlay"></div>
+</div>
+
+<main class="container" style="position: relative; z-index: 10; margin-top: -300px;">
+
+    <section class="movie-info-card shadow-lg">
+        <div class="movie-poster-side">
+            <img id="moviePoster" src="poster/default.jpg" alt="Poster">
+            <div id="movieAgeBadge" class="age-tag">P</div>
+        </div>
+
+        <div class="movie-content-side">
+            <h1 id="movieTitle" class="text-gold fw-bold">Đang tải phim...</h1>
+            <div class="movie-meta-row text-white mb-3">
+                <span id="movieDuration"><i class="far fa-clock"></i> -- phút</span>
+                <span id="movieRelease" class="ms-4"><i class="far fa-calendar-alt"></i> --/--/----</span>
+            </div>
+
+            <div class="movie-tags mb-4" id="movieGenres">
+            </div>
+
+            <div class="movie-description text-white">
+                <h4 class="text-gold mb-3">Nội dung phim</h4>
+                <p id="movieDesc" style="line-height: 1.8; color: #ccc;">Vui lòng đợi trong giây lát...</p>
+            </div>
+
+            <div class="movie-extra-info text-white mt-4">
+                <p><strong>Ngôn ngữ:</strong> <span id="movieLang">Tiếng Việt</span></p>
+                <p><strong>Định dạng:</strong> <span id="movieFormat">2D Phụ đề</span></p>
+            </div>
+
+            <button class="btn-book-now mt-4" onclick="document.getElementById('booking-area').scrollIntoView({behavior: 'smooth'})">
+                <i class="fas fa-ticket-alt"></i> MUA VÉ NGAY
+            </button>
+        </div>
+    </section>
+
+    <section class="trailer-section mt-5">
+        <h3 class="section-title text-dark fw-bold border-bottom pb-2 mb-4">
+            <i class="fab fa-youtube text-danger"></i> TRAILER
+        </h3>
+        <div class="video-container shadow-lg" id="trailerContainer">
+            <div class="no-video">Phim hiện chưa có Trailer</div>
+        </div>
+    </section>
+
+    <section id="booking-area" class="mt-5 p-4 bg-white rounded shadow-sm mb-5">
+        <h3 class="fw-bold text-gold mb-4 border-bottom pb-2">
+            <i class="fas fa-calendar-check"></i> LỊCH CHIẾU
+        </h3>
+
+        <div class="d-flex flex-wrap gap-3 mb-4">
+            <input type="date" id="chonNgay" class="form-control" style="max-width: 200px;">
+            <select id="chonThanhPho" class="form-select" style="max-width: 200px;">
+                <option value="">-- Chọn Khu vực --</option>
+            </select>
+            <select id="chonRap" class="form-select" style="max-width: 250px;" disabled>
+                <option value="">-- Chọn Rạp chiếu --</option>
+            </select>
+        </div>
+
+        <div id="danhSachSuatChieu" class="py-4 border-top">
+            <div class="text-center text-muted mt-3">
+                <i class="fas fa-film fa-3x mb-3 opacity-50"></i>
+                <p>Vui lòng chọn Khu vực và Rạp để xem các suất chiếu khả dụng.</p>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<div id="site-footer"></div>
+
+<script src="js/shared.js"></script>
+<script src="js/chi-tiet-phim.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTC Cinema – Hỗ Trợ Khách Hàng</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/HoTro.css">
+</head>
+<body>
+
+<div id="site-header"></div>
+<div class="gold-bar"></div>
+
+<section class="support-hero">
+    <div class="container">
+        <h1><i class="fas fa-headset"></i> Hỗ Trợ Khách Hàng</h1>
+        <p>Giải đáp mọi thắc mắc của quý khách</p>
+        <div class="support-search">
+            <input type="text" id="faqSearch" placeholder="Tìm kiếm câu hỏi..." oninput="searchFAQ(this.value)">
+            <i class="fas fa-search"></i>
+        </div>
+    </div>
+</section>
+
+<nav class="support-breadcrumb">
+    <div class="container">
+        <a href="menu.html">Trang chủ</a>
+        <span> / </span>
+        <span>Hỗ trợ khách hàng</span>
+    </div>
+</nav>
+
+<section class="faq-section">
+    <div class="container">
+        <div class="faq-categories">
+            <button class="faq-cat-btn active" onclick="filterFAQ('all',this)">Tất cả</button>
+            <button class="faq-cat-btn" onclick="filterFAQ('mua-ve',this)">Mua vé</button>
+            <button class="faq-cat-btn" onclick="filterFAQ('thanh-toan',this)">Thanh toán</button>
+            <button class="faq-cat-btn" onclick="filterFAQ('thanh-vien',this)">Thành viên</button>
+            <button class="faq-cat-btn" onclick="filterFAQ('rap',this)">Rạp chiếu</button>
+            <button class="faq-cat-btn" onclick="filterFAQ('khac',this)">Khác</button>
+        </div>
+
+        <div id="faqList"></div>
+
+        <div class="contact-quick">
+            <div class="contact-quick-card">
+                <i class="fas fa-phone-alt"></i>
+                <h4>Hotline</h4>
+                <p><a href="tel:19001234">1900 1234</a></p>
+                <p>Thứ 2 – CN: 8:00 – 22:00</p>
+            </div>
+            <div class="contact-quick-card">
+                <i class="fas fa-envelope"></i>
+                <h4>Email</h4>
+                <p><a href="mailto:hotro@utccinema.vn">hotro@utccinema.vn</a></p>
+                <p>Phản hồi trong 24h</p>
+            </div>
+            <div class="contact-quick-card">
+                <i class="fab fa-facebook-messenger"></i>
+                <h4>Chat trực tuyến</h4>
+                <p>Nhắn tin qua Facebook</p>
+                <p><a href="#">fb.com/UTCCinema</a></p>
+            </div>
+            <div class="contact-quick-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h4>Trực tiếp tại rạp</h4>
+                <p>Quầy thông tin tại mỗi rạp</p>
+                <p><a href="rap-chieu-phim.html">Xem hệ thống rạp</a></p>
+            </div>
+        </div>
+
+        <div class="support-cross-links">
+            <a href="lien-he.html" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Liên hệ trực tiếp</a>
+            <a href="the-thanh-vien.html" class="btn btn-outline"><i class="fas fa-crown"></i> Thẻ thành viên</a>
+            <a href="DatVe.html" class="btn btn-primary"><i class="fas fa-ticket-alt"></i> Mua vé xem phim</a>
+        </div>
+    </div>
+</section>
+
+<div id="quick-actions"></div>
+<div id="site-footer"></div>
+
+<script src="../js/shared.js"></script>
+<script src="../js/HoTro.js"></script>
+</body>
+</html>

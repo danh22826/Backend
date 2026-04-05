@@ -1,0 +1,338 @@
+﻿.detail-trailer-section {
+  background: #231c1c;
+  padding: 24px 0 16px;
+}
+
+.detail-trailer-section .container,
+.detail-info-section .container,
+.showtime-section .container {
+  max-width: 1040px;
+}
+
+.trailer-stage {
+  width: 100%;
+  max-width: 820px;
+  margin: 0 auto;
+  min-height: 300px;
+  height: clamp(300px, 42vw, 460px);
+  background: #000;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+.trailer-stage iframe,
+.trailer-stage video {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+.trailer-placeholder {
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ddd;
+  gap: 12px;
+}
+
+.trailer-placeholder i {
+  font-size: 3rem;
+  color: #e31837;
+}
+
+
+
+.trailer-strip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+  max-width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.trailer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+  color: #f3d17c;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.trailer-link:hover {
+  color: #fff;
+}
+
+.trailer-strip-arrow {
+  width: 56px;
+  height: 56px;
+  border: none;
+  background: #1f1a1a;
+  color: #8f8f8f;
+  font-size: 1.1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trailer-thumb {
+  width: 116px;
+  height: 68px;
+  padding: 3px;
+  background: #d1a74f;
+}
+
+.trailer-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.detail-info-section {
+  background: #fff;
+  padding: 26px 0 20px;
+}
+
+.detail-layout {
+  display: grid;
+  grid-template-columns: 165px minmax(0, 1fr);
+  gap: 22px;
+  align-items: start;
+}
+
+.detail-poster-col {
+  max-width: 165px;
+}
+
+.detail-poster {
+  width: 100%;
+  display: block;
+  box-shadow: var(--shadow-md);
+}
+
+.detail-book-btn {
+  display: block;
+  margin-top: 10px;
+  background: #231c1c;
+  color: #f3d17c;
+  text-align: center;
+  font-weight: 700;
+  padding: 11px 14px;
+  text-decoration: none;
+}
+
+.detail-book-btn:hover {
+  color: #fff;
+  background: #111;
+}
+
+.detail-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #18243c;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  line-height: 1.15;
+}
+
+.movie-info-list {
+  display: grid;
+  gap: 12px;
+}
+
+.movie-info-item {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 10px;
+  align-items: start;
+}
+
+.info-label {
+  font-weight: 700;
+  color: #111;
+}
+
+.info-value {
+  color: #4b5563;
+  line-height: 1.7;
+}
+
+.movie-summary-box {
+  margin-top: 28px;
+  padding-top: 20px;
+}
+
+.movie-summary-box h2 {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #18243c;
+  margin-bottom: 14px;
+}
+
+.movie-summary-box p {
+  color: #4b5563;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.showtime-section {
+  background: var(--bg-beige);
+  padding: 28px 0 42px;
+}
+
+.showtime-board {
+  background: #fff;
+  padding: 24px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid #eadfca;
+  display: grid;
+  gap: 28px;
+}
+
+.showtime-cinema-group {
+  display: grid;
+  gap: 10px;
+}
+
+.showtime-group-header {
+  display: grid;
+  gap: 4px;
+}
+
+.showtime-group-title {
+  display: grid;
+  gap: 2px;
+}
+
+.showtime-group-title h4 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #18243c;
+}
+
+.showtime-group-date {
+  color: #7a7f87;
+  font-size: 0.88rem;
+}
+
+.showtime-group-meta {
+  color: #5f6672;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.showtime-slot-grid {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  border: 1px solid #d9d9d9;
+  background: #fff;
+  scrollbar-width: thin;
+}
+
+.showtime-slot-grid::-webkit-scrollbar {
+  height: 8px;
+}
+
+.showtime-slot-grid::-webkit-scrollbar-thumb {
+  background: #d2c5ac;
+  border-radius: 999px;
+}
+
+.showtime-slot-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 116px;
+  min-height: 82px;
+  padding: 6px 8px;
+  background: #fff;
+  border-right: 1px solid #d9d9d9;
+  color: #2d3748;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.showtime-slot-card:hover {
+  background: #fff6ea;
+  color: #e31837;
+}
+
+.showtime-slot-room {
+  font-size: 0.78rem;
+  color: #677082;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.showtime-slot-time {
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #3b4758;
+}
+
+.showtime-slot-seats {
+  margin-top: 8px;
+  font-size: 0.74rem;
+  color: #5f6672;
+  text-align: center;
+  line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+  .detail-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-poster-col {
+    max-width: 260px;
+  }
+
+  .movie-info-item {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .detail-title {
+    font-size: 1.55rem;
+  }
+
+  .trailer-strip-arrow {
+    width: 50px;
+    height: 50px;
+  }
+
+  .trailer-thumb {
+    width: 104px;
+    height: 62px;
+  }
+
+  .trailer-link {
+    width: 100%;
+    justify-content: flex-end;
+    margin-left: 0;
+  }
+
+  .showtime-slot-card {
+    flex-basis: 104px;
+  }
+}
+
+
+
+
+
+

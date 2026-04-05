@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTC Cinema - Đặt Vé</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css?v=20260404j">
+    <link rel="stylesheet" href="../css/dat-ve.css?v=20260404j">
+</head>
+<body>
+
+<div id="site-header"></div>
+<div class="gold-bar"></div>
+
+<!-- Tab bar -->
+<div class="tab-bar">
+    <a href="DatVe.html" class="active">MUA VÉ XEM PHIM</a>
+    <a href="DatVe.html#showtimeSection">LỊCH CHIẾU PHIM</a>
+</div>
+
+<!-- Breadcrumb -->
+<nav class="mv-breadcrumb">
+    <div class="container mv-breadcrumb__inner">
+        <a href="menu.html" class="mv-breadcrumb__home">Trang chủ</a>
+        <span> / </span>
+        <span>Đặt vé</span>
+    </div>
+</nav>
+
+<!-- Calendar -->
+<section class="calendar-section">
+    <div class="container">
+        <div class="calendar-strip">
+            <button class="cal-nav" onclick="calShift(-7)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div id="calDays" class="mv-cal-days"></div>
+            <button class="cal-nav" onclick="calShift(7)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Main: 2 cột Rạp | Phim -->
+<section class="mv-main-section">
+    <div class="container">
+        <div class="mv-picker-grid">
+
+            <!-- ===== CỘT TRÁI: Rạp ===== -->
+            <div class="mv-col-rap">
+                <div class="mv-col-header">Rạp</div>
+
+                <!-- Rạp chiếu của tôi -->
+                <div class="mv-fav-bar">
+                    <span class="mv-fav-label">Rạp chiếu phim của tôi</span>
+                    <span class="mv-fav-chip" id="favChip"></span>
+                    <button class="mv-fav-settings" title="Cài đặt rạp yêu thích">
+                        <i class="fas fa-cog"></i>
+                    </button>
+                </div>
+
+                <!-- Tất cả | Phòng đặc biệt -->
+                <div class="mv-type-tabs">
+                    <button class="mv-type-tab active" onclick="switchRapType(this,'all')">• Tất cả</button>
+                    <button class="mv-type-tab" onclick="switchRapType(this,'special')">Phòng chiếu đặc biệt</button>
+                </div>
+
+                <!-- Khu vực / thành phố -->
+                <div id="regionTabs" class="mv-region-list">
+                    <div class="loading-spinner"><div class="spinner"></div></div>
+                </div>
+
+                <!-- Rạp trong khu vực -->
+                <div id="cinemaList" class="mv-cinema-chips"></div>
+            </div>
+
+            <!-- ===== CỘT PHẢI: Phim ===== -->
+            <div class="mv-col-phim">
+                <div class="mv-col-header">Phim</div>
+
+                <!-- Tab -->
+                <div class="mv-phim-tabs">
+                    <button class="mv-phim-tab active" onclick="switchPhimTab(this,'popular')">Xem nhiều nhất</button>
+                    <span class="mv-tab-sep">|</span>
+                    <button class="mv-phim-tab" onclick="switchPhimTab(this,'rated')">Đánh giá tốt nhất</button>
+                </div>
+
+                <!-- Danh sách phim -->
+                <div id="phimList" class="mv-phim-list">
+                    <div class="mv-phim-empty">Chọn rạp để xem phim đang chiếu</div>
+                </div>
+            </div>
+
+        </div><!-- /mv-picker-grid -->
+
+        <!-- ===== Lịch chiếu (hiện khi chọn phim) ===== -->
+        <div id="showtimeSection" class="mv-showtime-section" style="display:none;">
+            <div class="mv-showtime-header">
+                <div class="mv-showtime-title-row">
+                    <h2 class="mv-showtime-title">Giờ chiếu</h2>
+                    <span class="mv-showtime-note">
+            Thời gian chiếu phim có thể chênh lệch 15 phút do chiếu quảng cáo, giới thiệu phim ra rạp
+          </span>
+                </div>
+                <select class="mv-showtime-filter" id="showtimeFilter" onchange="filterShowtimes()">
+                    <option value="all">Tất cả ▾</option>
+                </select>
+            </div>
+            <div id="showtimeResults"></div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ===== Thanh trạng thái cố định phía dưới ===== -->
+<div class="mv-status-bar" id="statusBar">
+    <div class="container mv-status-inner">
+        <div class="mv-status-item">
+            <span class="mv-status-label">Ngày</span>
+            <strong id="statusDate">–</strong>
+        </div>
+        <div class="mv-status-item">
+            <span class="mv-status-label">Rạp</span>
+            <span id="statusRapChip" class="mv-status-chip" style="display:none;">
+        <span id="statusRapName"></span>
+        <button onclick="clearRap()"><i class="fas fa-times"></i></button>
+      </span>
+            <span id="statusRapEmpty" class="mv-status-empty">–</span>
+        </div>
+        <div class="mv-status-item">
+            <span class="mv-status-label">Phim</span>
+            <span id="statusPhimChip" class="mv-status-chip" style="display:none;">
+        <span id="statusPhimName"></span>
+        <button onclick="clearPhim()"><i class="fas fa-times"></i></button>
+      </span>
+            <span id="statusPhimEmpty" class="mv-status-empty">–</span>
+        </div>
+    </div>
+</div>
+
+<div id="quick-actions"></div>
+<div id="site-footer"></div>
+
+<script src="../js/shared.js?v=20260404k"></script>
+<script src="../js/mua-ve.js?v=20260404k"></script>
+</body>
+</html>

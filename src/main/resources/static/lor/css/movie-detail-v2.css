@@ -1,0 +1,79 @@
+/* Layout chính cho card phim */
+.movie-info-card {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 40px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 40px;
+}
+
+.movie-poster-side { position: relative; }
+.movie-poster-side img {
+    width: 100%;
+    border-radius: 10px;
+    border: 4px solid #fff;
+    box-shadow: var(--shadow-md);
+}
+
+.age-tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: var(--accent-red);
+    color: #fff;
+    padding: 5px 12px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.text-gold { color: var(--accent-gold) !important; }
+
+.movie-meta-row {
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    color: #666;
+    display: flex;
+    gap: 20px;
+}
+
+.movie-tags span {
+    background: var(--bg-beige);
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-right: 8px;
+    font-size: 0.85rem;
+}
+
+.movie-description { margin: 25px 0; border-top: 1px solid #eee; padding-top: 20px; }
+
+.btn-book-now {
+    background: var(--accent-red);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-book-now:hover { background: #b3122b; transform: translateY(-2px); }
+
+/* CSS cho Trailer YouTube */
+.trailer-section { margin-top: 50px; }
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Tỉ lệ 16:9 */
+    height: 0;
+    background: #000;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    border: none;
+}
+.no-video { color: #555; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }

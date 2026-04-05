@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTC Cinema – Hệ Thống Rạp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/RapChieuPhim.css">
+</head>
+<body>
+
+<div id="site-header"></div>
+<div class="gold-bar"></div>
+
+<section class="rap-hero">
+    <div class="container">
+        <h1><i class="fas fa-film"></i> Hệ Thống Rạp UTC Cinema</h1>
+        <p>Trải nghiệm điện ảnh đỉnh cao tại các rạp chiếu phim hiện đại trên toàn quốc</p>
+    </div>
+</section>
+
+<nav class="rap-breadcrumb">
+    <div class="container">
+        <a href="menu.html">Trang chủ</a>
+        <span> / </span>
+        <span>Rạp chiếu phim</span>
+    </div>
+</nav>
+
+<section class="rap-main-content">
+    <div class="container">
+        <div class="city-filter" id="cityFilter">
+            <button class="city-btn active" onclick="filterCity(null, this)">Tất cả</button>
+        </div>
+
+        <div class="rap-list" id="rapList">
+            <div class="loading-spinner"><div class="spinner"></div></div>
+        </div>
+
+        <div class="rap-cross-links">
+            <a href="main.html" class="btn btn-outline"><i class="fas fa-film"></i> Phim đang chiếu</a>
+            <a href="uu-dai.html" class="btn btn-outline"><i class="fas fa-gift"></i> Ưu đãi hấp dẫn</a>
+            <a href="lien-he.html" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Liên hệ</a>
+        </div>
+    </div>
+</section>
+
+<div id="quick-actions"></div>
+<div id="site-footer"></div>
+
+<script src="../js/shared.js"></script>
+<script src="../js/RapChieuPhim.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+/* --- Nền mờ (Backdrop) --- */
+.movie-backdrop {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 600px;
+    background-color: #111;
+    background-size: cover;
+    background-position: center;
+    filter: blur(15px);
+    z-index: 1;
+}
+.backdrop-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(15, 15, 20, 0.5) 0%, rgba(245, 239, 230, 1) 100%);
+}
+
+/* --- Card Thông tin phim --- */
+.movie-info-card {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 40px;
+    background: rgba(20, 24, 39, 0.95);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.movie-poster-side {
+    position: relative;
+}
+.movie-poster-side img {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #c8a96e;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.age-tag {
+    position: absolute;
+    top: 15px; left: 15px;
+    background: #e31837;
+    color: #fff;
+    padding: 5px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.text-gold { color: #c8a96e !important; }
+.bg-beige { background-color: #f5efe6; }
+
+.movie-tags span {
+    display: inline-block;
+    border: 1px solid #c8a96e;
+    color: #c8a96e;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-size: 0.9rem;
+}
+
+.btn-book-now {
+    background: linear-gradient(90deg, #e31837 0%, #a80e25 100%);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn-book-now:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(227, 24, 55, 0.4);
+}
+
+/* --- Container Video Trailer --- */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Tỉ lệ 16:9 chuẩn YouTube */
+    height: 0;
+    background: #000;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    border: none;
+}
+.no-video {
+    color: #888;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+}
+
+/* --- Nút Suất chiếu --- */
+.time-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+    background: #fff;
+    min-width: 120px;
+}
+.time-btn:hover {
+    border-color: #e31837;
+    background: #fff5f5;
+    color: #e31837;
+}
+.time-btn .time { font-size: 1.25rem; font-weight: bold; }
+.time-btn .seats { font-size: 0.85rem; color: #666; margin-top: 4px; }

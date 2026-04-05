@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTC Cinema – Liên Hệ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/lien-he.css">
+</head>
+<body>
+
+<div id="site-header"></div>
+<div class="gold-bar"></div>
+
+<section class="contact-hero">
+    <div class="container">
+        <h1><i class="fas fa-paper-plane"></i> Liên Hệ Với Chúng Tôi</h1>
+        <p>Chúng tôi luôn sẵn sàng lắng nghe và hỗ trợ quý khách</p>
+    </div>
+</section>
+
+<nav class="contact-breadcrumb">
+    <div class="container">
+        <a href="menu.html">Trang chủ</a>
+        <span> / </span>
+        <span>Liên hệ</span>
+    </div>
+</nav>
+
+<section class="contact-main-section">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-form-section">
+                <h2>Gửi tin nhắn cho chúng tôi</h2>
+                <form id="contactForm" onsubmit="sendMessage(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Họ và tên <span class="required">*</span></label>
+                            <input type="text" class="form-control" id="contactName" required placeholder="Nhập họ và tên">
+                        </div>
+                        <div class="form-group">
+                            <label>Email <span class="required">*</span></label>
+                            <input type="email" class="form-control" id="contactEmail" required placeholder="Nhập email">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Số điện thoại</label>
+                            <input type="tel" class="form-control" id="contactPhone" placeholder="Nhập số điện thoại">
+                        </div>
+                        <div class="form-group">
+                            <label>Chủ đề</label>
+                            <select class="form-control" id="contactSubject">
+                                <option value="general">Câu hỏi chung</option>
+                                <option value="ticket">Vấn đề vé / đặt chỗ</option>
+                                <option value="member">Thẻ thành viên</option>
+                                <option value="complaint">Góp ý / Khiếu nại</option>
+                                <option value="cooperation">Hợp tác kinh doanh</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Nội dung <span class="required">*</span></label>
+                        <textarea class="form-control" id="contactMessage" required placeholder="Nhập nội dung tin nhắn..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit-contact">Gửi tin nhắn</button>
+                </form>
+            </div>
+
+            <div class="contact-cards">
+                <div class="contact-info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Trụ sở chính</h4>
+                        <p>Số 3, Cầu Giấy, Hà Nội, Việt Nam</p>
+                    </div>
+                </div>
+                <div class="contact-info-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <h4>Hotline</h4>
+                        <p>1900 1234 (8:00 – 22:00)</p>
+                    </div>
+                </div>
+                <div class="contact-info-card">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>hotro@utccinema.vn</p>
+                        <p>hoptac@utccinema.vn</p>
+                    </div>
+                </div>
+                <div class="contact-info-card">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h4>Giờ làm việc</h4>
+                        <p>Thứ Hai – Chủ Nhật: 8:00 – 23:00</p>
+                    </div>
+                </div>
+                <div class="contact-info-card">
+                    <i class="fab fa-facebook"></i>
+                    <div>
+                        <h4>Mạng xã hội</h4>
+                        <p>Facebook: UTC Cinema</p>
+                        <p>Instagram: @utccinema</p>
+                        <p>YouTube: UTC Cinema Official</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="map-wrapper">
+            <div class="map-placeholder">
+                <i class="fas fa-map-marked-alt"></i>
+                <h3>Bản đồ vị trí trụ sở UTC Cinema</h3>
+                <p class="map-address">Số 3, Cầu Giấy, Hà Nội</p>
+            </div>
+        </div>
+
+        <div class="contact-cross-links">
+            <a href="ho-tro.html" class="btn btn-outline"><i class="fas fa-question-circle"></i> Câu hỏi thường gặp</a>
+            <a href="rap-chieu-phim.html" class="btn btn-outline"><i class="fas fa-building"></i> Hệ thống rạp</a>
+            <a href="the-thanh-vien.html" class="btn btn-outline"><i class="fas fa-crown"></i> Thẻ thành viên</a>
+        </div>
+    </div>
+</section>
+
+<div id="quick-actions"></div>
+<div id="site-footer"></div>
+
+<script src="../js/shared.js"></script>
+<script src="../js/LienHe.js"></script>
+</body>
+</html>

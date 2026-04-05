@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UTC Cinema – Thẻ Thành Viên</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .membership-intro { max-width:700px; margin:0 auto; text-align:center; padding:32px 0; }
+    .membership-intro p { color:var(--text-muted); font-size:.95rem; line-height:1.7; }
+    .how-it-works { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:24px; padding:40px 0; }
+    .step-card { text-align:center; padding:28px 20px; background:var(--bg-white); border-radius:var(--radius-lg); box-shadow:var(--shadow-sm); }
+    .step-num { display:inline-flex; width:48px; height:48px; border-radius:50%; background:var(--accent-red); color:#fff; align-items:center; justify-content:center; font-size:1.2rem; font-weight:700; margin-bottom:16px; }
+    .step-card h4 { margin-bottom:8px; font-size:.95rem; }
+    .step-card p { font-size:.8rem; color:var(--text-muted); }
+    .benefits-section { background:var(--bg-beige); padding:40px 0; }
+    .benefit-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:20px; }
+    .benefit-item { display:flex; gap:14px; padding:20px; background:var(--bg-white); border-radius:var(--radius-md); box-shadow:var(--shadow-sm); }
+    .benefit-item i { font-size:1.5rem; color:var(--accent-gold); flex-shrink:0; margin-top:2px; }
+    .benefit-item h4 { font-size:.9rem; margin-bottom:4px; }
+    .benefit-item p { font-size:.8rem; color:var(--text-muted); }
+    @media(max-width:768px) { .how-it-works { grid-template-columns:1fr 1fr; } }
+    @media(max-width:480px) { .how-it-works { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+
+<div id="site-header"></div>
+<div class="gold-bar"></div>
+
+<!-- Membership Hero -->
+<section class="membership-hero">
+  <div class="container">
+    <h1><i class="fas fa-crown"></i> Thẻ Thành Viên UTC Cinema</h1>
+    <p style="color:rgba(255,255,255,.7)">Tích điểm – Nhận ưu đãi – Trải nghiệm đặc quyền</p>
+  </div>
+</section>
+
+<nav style="padding:12px 0;background:var(--bg-beige);border-bottom:1px solid var(--border-light);">
+  <div class="container" style="font-size:.85rem;color:var(--text-muted);">
+    <a href="index.html" style="color:var(--accent-gold)">Trang chủ</a>
+    <span> / </span>
+    <span>Thẻ thành viên</span>
+  </div>
+</nav>
+
+<!-- Intro -->
+<section>
+  <div class="container">
+    <div class="membership-intro">
+      <h2 class="section-title text-center" style="display:inline-block;">Chương trình thành viên</h2>
+      <p>Đăng ký thẻ thành viên UTC Cinema để tích lũy điểm thưởng với mỗi giao dịch mua vé và nhận những ưu đãi độc quyền dành riêng cho thành viên.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Tiers -->
+<section style="padding:0 0 40px;">
+  <div class="container">
+    <div class="membership-tiers">
+      <div class="tier-card">
+        <div class="tier-icon">🥈</div>
+        <h3>Thành Viên Thường</h3>
+        <p class="tier-desc">Đăng ký miễn phí</p>
+        <ul class="tier-benefits">
+          <li><i class="fas fa-check"></i> Tích 1 điểm / 10.000đ</li>
+          <li><i class="fas fa-check"></i> Giảm 5% giá vé ngày thường</li>
+          <li><i class="fas fa-check"></i> Nhận thông báo phim mới</li>
+          <li><i class="fas fa-check"></i> Ưu đãi sinh nhật</li>
+          <li><i class="fas fa-check"></i> Đặt vé online ưu tiên</li>
+        </ul>
+      </div>
+      <div class="tier-card gold">
+        <div class="tier-icon">🥇</div>
+        <h3>Thành Viên Gold</h3>
+        <p class="tier-desc">Tích lũy từ 500 điểm</p>
+        <ul class="tier-benefits">
+          <li><i class="fas fa-check"></i> Tích 1.5 điểm / 10.000đ</li>
+          <li><i class="fas fa-check"></i> Giảm 10% giá vé mọi ngày</li>
+          <li><i class="fas fa-check"></i> 1 vé miễn phí / tháng</li>
+          <li><i class="fas fa-check"></i> Ưu đãi combo bắp nước</li>
+          <li><i class="fas fa-check"></i> Ghế VIP ưu tiên đặt</li>
+          <li><i class="fas fa-check"></i> Quà sinh nhật đặc biệt</li>
+        </ul>
+      </div>
+      <div class="tier-card vip">
+        <div class="tier-icon">👑</div>
+        <h3>Thành Viên VIP</h3>
+        <p class="tier-desc">Tích lũy từ 2000 điểm</p>
+        <ul class="tier-benefits">
+          <li><i class="fas fa-check"></i> Tích 2 điểm / 10.000đ</li>
+          <li><i class="fas fa-check"></i> Giảm 20% giá vé mọi ngày</li>
+          <li><i class="fas fa-check"></i> 2 vé miễn phí / tháng</li>
+          <li><i class="fas fa-check"></i> Free upgrade ghế VIP</li>
+          <li><i class="fas fa-check"></i> Phòng chờ VIP Lounge</li>
+          <li><i class="fas fa-check"></i> Premier Night ưu tiên</li>
+          <li><i class="fas fa-check"></i> Quà sinh nhật cao cấp</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How it works -->
+<section style="background:var(--bg-beige);padding:40px 0;">
+  <div class="container">
+    <h2 class="section-title text-center" style="display:inline-block;width:100%;">Cách thức hoạt động</h2>
+    <div class="how-it-works">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <h4>Đăng ký tài khoản</h4>
+        <p>Tạo tài khoản UTC Cinema hoàn toàn miễn phí</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <h4>Mua vé xem phim</h4>
+        <p>Mỗi giao dịch đều được tích điểm tự động</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <h4>Tích lũy điểm</h4>
+        <p>Tích đủ điểm để nâng hạng thành viên</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">4</div>
+        <h4>Nhận ưu đãi</h4>
+        <p>Hạng càng cao, ưu đãi càng nhiều</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Additional benefits -->
+<section style="padding:40px 0;">
+  <div class="container">
+    <h2 class="section-title text-center" style="display:inline-block;width:100%;">Quyền lợi thành viên</h2>
+    <div class="benefit-grid">
+      <div class="benefit-item">
+        <i class="fas fa-ticket-alt"></i>
+        <div><h4>Đặt vé ưu tiên</h4><p>Thành viên được đặt vé trước khi mở bán chính thức</p></div>
+      </div>
+      <div class="benefit-item">
+        <i class="fas fa-birthday-cake"></i>
+        <div><h4>Ưu đãi sinh nhật</h4><p>Nhận vé và combo miễn phí vào tháng sinh nhật</p></div>
+      </div>
+      <div class="benefit-item">
+        <i class="fas fa-percent"></i>
+        <div><h4>Giảm giá thường xuyên</h4><p>Giảm giá vé và combo bắp nước mọi ngày</p></div>
+      </div>
+      <div class="benefit-item">
+        <i class="fas fa-star"></i>
+        <div><h4>Điểm thưởng</h4><p>Đổi điểm lấy vé xem phim, combo hoặc quà tặng</p></div>
+      </div>
+      <div class="benefit-item">
+        <i class="fas fa-bell"></i>
+        <div><h4>Thông báo phim mới</h4><p>Cập nhật sớm nhất về các phim sắp ra rạp</p></div>
+      </div>
+      <div class="benefit-item">
+        <i class="fas fa-couch"></i>
+        <div><h4>Ghế VIP ưu tiên</h4><p>Ưu tiên chọn ghế VIP và Sweetbox khi đặt vé</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="background:var(--accent-red);padding:48px 0;text-align:center;">
+  <div class="container">
+    <h2 style="color:#fff;font-size:1.8rem;margin-bottom:12px;">Trở thành thành viên ngay hôm nay!</h2>
+    <p style="color:rgba(255,255,255,.8);margin-bottom:24px;">Đăng ký miễn phí và bắt đầu tích điểm từ giao dịch đầu tiên</p>
+    <a href="dang-nhap.html#register" class="btn" style="background:#fff;color:var(--accent-red);font-weight:700;padding:14px 40px;font-size:1rem;">ĐĂNG KÝ NGAY</a>
+  </div>
+</section>
+
+<div id="quick-actions"></div>
+<div id="site-footer"></div>
+
+<script src="js/shared.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  initPage('the-thanh-vien');
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UTC Cinema – Tin Mới & Ưu Đãi</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .promo-hero { background:linear-gradient(135deg,#e31837,#8b1528); color:#fff; padding:50px 0; text-align:center; }
+    .promo-hero h1 { font-size:2rem; margin-bottom:8px; color:#fff; }
+    .promo-hero p { color:rgba(255,255,255,.8); }
+    .promo-tabs { display:flex; justify-content:center; gap:0; border-bottom:2px solid var(--border-light); margin-bottom:32px; }
+    .promo-tab { padding:14px 32px; font-weight:600; font-size:.95rem; color:var(--text-muted); border-bottom:3px solid transparent; margin-bottom:-2px; transition:var(--transition); cursor:pointer; background:none; }
+    .promo-tab.active { color:var(--accent-red); border-bottom-color:var(--accent-red); }
+    .promo-tab:hover { color:var(--accent-red); }
+    .promo-card { background:var(--bg-white); border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-sm); transition:var(--transition); }
+    .promo-card:hover { box-shadow:var(--shadow-md); transform:translateY(-3px); }
+    .promo-card-img { aspect-ratio:16/9; overflow:hidden; position:relative; }
+    .promo-card-img img { width:100%; height:100%; object-fit:cover; }
+    .promo-badge { position:absolute; top:12px; left:12px; padding:4px 12px; background:var(--accent-red); color:#fff; font-size:.7rem; font-weight:700; border-radius:12px; text-transform:uppercase; }
+    .promo-card-body { padding:20px; }
+    .promo-card-body h3 { font-size:1rem; font-weight:700; margin-bottom:8px; }
+    .promo-card-body .promo-date { font-size:.8rem; color:var(--text-muted); margin-bottom:10px; display:flex; align-items:center; gap:6px; }
+    .promo-card-body .promo-excerpt { font-size:.85rem; color:var(--text-body); line-height:1.6; }
+    .promo-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:24px; }
+    @media(max-width:768px) { .promo-grid { grid-template-columns:1fr; } .promo-tabs { flex-wrap:wrap; } .promo-tab { padding:10px 16px; font-size:.85rem; } }
+  </style>
+</head>
+<body>
+
+<div id="site-header"></div>
+<div class="gold-bar"></div>
+
+<section class="promo-hero">
+  <div class="container">
+    <h1><i class="fas fa-gift"></i> Tin Mới & Ưu Đãi</h1>
+    <p>Cập nhật những chương trình khuyến mãi hấp dẫn từ UTC Cinema</p>
+  </div>
+</section>
+
+<nav style="padding:12px 0;background:var(--bg-beige);border-bottom:1px solid var(--border-light);">
+  <div class="container" style="font-size:.85rem;color:var(--text-muted);">
+    <a href="index.html" style="color:var(--accent-gold)">Trang chủ</a>
+    <span> / </span>
+    <span>Tin mới & Ưu đãi</span>
+  </div>
+</nav>
+
+<section style="padding:40px 0;">
+  <div class="container">
+    <div class="promo-tabs">
+      <button class="promo-tab active" onclick="filterPromo('all',this)">Tất cả</button>
+      <button class="promo-tab" onclick="filterPromo('khuyen-mai',this)">Khuyến mãi</button>
+      <button class="promo-tab" onclick="filterPromo('tin-tuc',this)">Tin tức phim</button>
+      <button class="promo-tab" onclick="filterPromo('su-kien',this)">Sự kiện</button>
+    </div>
+
+    <div class="promo-grid" id="promoGrid"></div>
+  </div>
+</section>
+
+<div id="quick-actions"></div>
+<div id="site-footer"></div>
+
+<script src="js/shared.js"></script>
+<script>
+// Static promotions data (no backend endpoint for this)
+const promotions = [
+  {
+    id: 1, type: 'khuyen-mai', badge: 'HOT',
+    img: 'https://images.unsplash.com/photo-1585647347483-22b66260dfff?w=600&q=80',
+    title: 'Happy Day – Đồng giá vé 55K',
+    date: '2026-01-01', endDate: '2026-12-31',
+    excerpt: 'Áp dụng vào thứ 4 hàng tuần, tất cả khách hàng UTC Cinema được mua vé xem phim với giá chỉ 55.000đ cho phim 2D.'
+  },
+  {
+    id: 2, type: 'khuyen-mai', badge: 'MỚI',
+    img: 'https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=600&q=80',
+    title: 'Combo Bắp Nước siêu tiết kiệm',
+    date: '2026-02-01', endDate: '2026-12-31',
+    excerpt: 'Mua combo 1 bắp lớn + 2 nước ngọt lớn chỉ với 89.000đ. Áp dụng tại quầy khi mua vé xem phim.'
+  },
+  {
+    id: 3, type: 'su-kien',
+    img: 'https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=600&q=80',
+    title: 'Đêm phim kinh dị – Horror Night',
+    date: '2026-03-15', endDate: '2026-03-31',
+    excerpt: 'Sự kiện chiếu phim kinh dị marathon xuyên đêm tại tất cả rạp UTC Cinema toàn quốc. Giới hạn 100 vé/rạp.'
+  },
+  {
+    id: 4, type: 'tin-tuc',
+    img: 'https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=600&q=80',
+    title: 'Top 5 phim bom tấn tháng 4/2026',
+    date: '2026-03-25',
+    excerpt: 'Danh sách những bộ phim bom tấn đáng mong đợi nhất sẽ ra rạp trong tháng 4/2026 tại UTC Cinema.'
+  },
+  {
+    id: 5, type: 'khuyen-mai', badge: 'ĐẶC BIỆT',
+    img: 'https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=600&q=80',
+    title: 'Sinh nhật UTC Cinema – Giảm 50% vé',
+    date: '2026-04-01', endDate: '2026-04-07',
+    excerpt: 'Nhân dịp kỷ niệm sinh nhật, UTC Cinema tri ân khách hàng với ưu đãi giảm 50% giá vé cho tất cả thành viên.'
+  },
+  {
+    id: 6, type: 'tin-tuc',
+    img: 'https://images.unsplash.com/photo-1595769816263-9b910be24d5f?w=600&q=80',
+    title: 'UTC Cinema khai trương rạp mới tại Đà Nẵng',
+    date: '2026-03-20',
+    excerpt: 'Rạp UTC Cinema Đà Nẵng chính thức khai trương với 8 phòng chiếu hiện đại, sức chứa trên 1200 ghế.'
+  },
+  {
+    id: 7, type: 'su-kien',
+    img: 'https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=600&q=80',
+    title: 'Cuộc thi làm phim ngắn UTC Film Festival',
+    date: '2026-05-01', endDate: '2026-06-30',
+    excerpt: 'Cuộc thi sáng tạo phim ngắn dành cho các bạn trẻ yêu thích điện ảnh. Giải thưởng lên đến 50 triệu đồng.'
+  },
+  {
+    id: 8, type: 'khuyen-mai',
+    img: 'https://images.unsplash.com/photo-1505686994434-e3cc5abf1330?w=600&q=80',
+    title: 'Ưu đãi học sinh – sinh viên',
+    date: '2026-01-01', endDate: '2026-12-31',
+    excerpt: 'Học sinh, sinh viên xuất trình thẻ được giảm 20% giá vé xem phim tất cả các ngày trong tuần.'
+  }
+];
+
+let filteredPromos = [...promotions];
+
+document.addEventListener('DOMContentLoaded', () => {
+  initPage('uu-dai');
+  renderPromos();
+});
+
+function filterPromo(type, btn) {
+  document.querySelectorAll('.promo-tab').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+  filteredPromos = type === 'all' ? [...promotions] : promotions.filter(p => p.type === type);
+  renderPromos();
+}
+
+function renderPromos() {
+  const el = document.getElementById('promoGrid');
+  if (!filteredPromos.length) {
+    el.innerHTML = '<div class="empty-state"><i class="fas fa-gift"></i><h3>Không có tin nào</h3></div>';
+    return;
+  }
+  el.innerHTML = filteredPromos.map(p => `
+    <div class="promo-card">
+      <div class="promo-card-img">
+        <img src="${p.img}" alt="${escapeHtml(p.title)}" loading="lazy">
+        ${p.badge ? `<span class="promo-badge">${escapeHtml(p.badge)}</span>` : ''}
+      </div>
+      <div class="promo-card-body">
+        <h3>${escapeHtml(p.title)}</h3>
+        <div class="promo-date">
+          <i class="far fa-calendar-alt"></i>
+          ${formatDate(p.date)}${p.endDate ? ' – ' + formatDate(p.endDate) : ''}
+        </div>
+        <p class="promo-excerpt">${escapeHtml(p.excerpt)}</p>
+        <a href="mua-ve.html" style="display:inline-block;margin-top:12px;font-size:.85rem;font-weight:600;color:var(--accent-red);">Mua vé ngay <i class="fas fa-arrow-right" style="font-size:.75rem"></i></a>
+      </div>
+    </div>
+  `).join('');
+}
+</script>
+</body>
+</html>

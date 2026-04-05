@@ -1,0 +1,1518 @@
+> Task :compileJava UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :resolveMainClassName UP-TO-DATE
+
+> Task :bootRun
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.3)
+
+2026-04-05T00:27:06.823+07:00  INFO 5476 --- [Cinema] [           main] com.example.demo.CinemaApplication       : Starting CinemaApplication using Java 24.0.2 with PID 5476 (E:\Spring\build\classes\java\main started by tbih8 in E:\Spring)
+2026-04-05T00:27:06.826+07:00  INFO 5476 --- [Cinema] [           main] com.example.demo.CinemaApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-04-05T00:27:07.439+07:00  INFO 5476 --- [Cinema] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-05T00:27:07.515+07:00  INFO 5476 --- [Cinema] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 13 JPA repository interfaces.
+2026-04-05T00:27:07.925+07:00  INFO 5476 --- [Cinema] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-04-05T00:27:07.936+07:00  INFO 5476 --- [Cinema] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-05T00:27:07.936+07:00  INFO 5476 --- [Cinema] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-04-05T00:27:07.985+07:00  INFO 5476 --- [Cinema] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1123 ms
+2026-04-05T00:27:08.149+07:00  INFO 5476 --- [Cinema] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-05T00:27:08.188+07:00  INFO 5476 --- [Cinema] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-04-05T00:27:08.587+07:00  INFO 5476 --- [Cinema] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-05T00:27:08.610+07:00  INFO 5476 --- [Cinema] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-05T00:27:09.211+07:00  INFO 5476 --- [Cinema] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: daac47e5-d4a1-44a6-9473-627c8d93e3bd
+2026-04-05T00:27:09.215+07:00  INFO 5476 --- [Cinema] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-05T00:27:09.384+07:00  WARN 5476 --- [Cinema] [           main] org.hibernate.orm.deprecation            : HHH90000025: SQLServerDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-05T00:27:09.414+07:00  INFO 5476 --- [Cinema] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:sqlserver://localhost:1433;concatNullYieldsNull=ON;quotedIdentifier=ON;connectRetryInterval=10;connectRetryCount=1;maxResultBuffer=-1;sendTemporalDataTypesAsStringForBulkCopy=true;delayLoadingLobs=true;useFmtOnly=false;vectorTypeSupport=v1;cacheBulkCopyMetadata=false;bulkCopyForBatchInsertAllowEncryptedValueModifications=false;bulkCopyForBatchInsertTableLock=false;bulkCopyForBatchInsertKeepNulls=false;bulkCopyForBatchInsertKeepIdentity=false;bulkCopyForBatchInsertFireTriggers=false;bulkCopyForBatchInsertCheckConstraints=false;bulkCopyForBatchInsertBatchSize=0;useBulkCopyForBatchInsert=false;cancelQueryTimeout=-1;sslProtocol=TLS;calcBigDecimalPrecision=false;useDefaultJaasConfig=false;jaasConfigurationName=SQLJDBCDriver;statementPoolingCacheSize=0;serverPreparedStatementDiscardThreshold=10;enablePrepareOnFirstPreparedStatementCall=false;fips=false;socketTimeout=0;authentication=NotSpecified;authenticationScheme=nativeAuthentication;xopenStates=false;datetimeParameterType=datetime2;sendTimeAsDatetime=true;replication=false;trustStoreType=JKS;trustServerCertificate=true;TransparentNetworkIPResolution=true;iPAddressPreference=IPv4First;serverNameAsACE=false;sendStringParametersAsUnicode=true;selectMethod=direct;responseBuffering=adaptive;queryTimeout=-1;packetSize=8000;multiSubnetFailover=false;loginTimeout=30;lockTimeout=-1;lastUpdateCount=true;useDefaultGSSCredential=false;prepareMethod=prepexec;encrypt=true;disableStatementPooling=true;databaseName=QuanLyRapPhim;columnEncryptionSetting=Disabled;applicationName=Microsoft JDBC Driver for SQL Server;applicationIntent=readwrite;]
+	Database driver: Microsoft JDBC Driver 13.2 for SQL Server
+	Database dialect: SQLServerDialect
+	Database version: 17.0
+	Default catalog/schema: QuanLyRapPhim/dbo
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 128
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-05T00:27:11.258+07:00  INFO 5476 --- [Cinema] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-05T00:27:12.106+07:00  INFO 5476 --- [Cinema] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-05T00:27:12.199+07:00  INFO 5476 --- [Cinema] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-05T00:27:12.577+07:00  INFO 5476 --- [Cinema] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-04-05T00:27:13.747+07:00  INFO 5476 --- [Cinema] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-04-05T00:27:13.754+07:00  INFO 5476 --- [Cinema] [           main] com.example.demo.CinemaApplication       : Started CinemaApplication in 7.302 seconds (process running for 7.641)
+2026-04-05T00:27:36.067+07:00  INFO 5476 --- [Cinema] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-05T00:27:36.068+07:00  INFO 5476 --- [Cinema] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-05T00:27:36.070+07:00  INFO 5476 --- [Cinema] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-04-05T00:27:36.086+07:00  WARN 5476 --- [Cinema] [nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/api/hoa-don/HD9BA81CA2/huy-ve' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+Hibernate: select nd1_0.id,nd1_0.password,nd1_0.role,nd1_0.username from NguoiDung nd1_0 where nd1_0.username=?
+Hibernate: select count_big(*) from KhachHang kh1_0 where kh1_0.MaKhachHang=?
+Hibernate: select hd1_0.MaDon,hd1_0.MaKhachHang,hd1_0.PhuongThucThanhToan,hd1_0.ThoiGianDat,hd1_0.ThoiGianThanhToan,hd1_0.TongTien,hd1_0.TrangThai from HoaDon hd1_0 where hd1_0.MaKhachHang=? order by hd1_0.ThoiGianDat desc
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,v1_0.GiaVeCoBan,v1_0.MaDon,v1_0.PhuThu,v1_0.MaSuat,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 left join Ghe g1_0 on g1_0.MaGhe=v1_0.MaGhe where v1_0.MaDon=? order by g1_0.SoHang,g1_0.SoCot
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select sc1_0.MaSuat,sc1_0.Gia,sc1_0.GioChieu,sc1_0.NgayChieu,sc1_0.MaPhim,sc1_0.MaPhong from SuatChieu sc1_0 where sc1_0.MaSuat=?
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select count_big(g1_0.MaGhe) from Ghe g1_0 where g1_0.MaPhong=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaRap=?
+Hibernate: select lg1_0.MaLoaiGhe,lg1_0.GiaPhuThu,lg1_0.TenLoaiGhe from LoaiGhe lg1_0 where lg1_0.MaLoaiGhe=?
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,v1_0.GiaVeCoBan,v1_0.MaDon,v1_0.PhuThu,v1_0.MaSuat,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 left join Ghe g1_0 on g1_0.MaGhe=v1_0.MaGhe where v1_0.MaDon=? order by g1_0.SoHang,g1_0.SoCot
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select sc1_0.MaSuat,sc1_0.Gia,sc1_0.GioChieu,sc1_0.NgayChieu,sc1_0.MaPhim,sc1_0.MaPhong from SuatChieu sc1_0 where sc1_0.MaSuat=?
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select count_big(g1_0.MaGhe) from Ghe g1_0 where g1_0.MaPhong=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaRap=?
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,v1_0.GiaVeCoBan,v1_0.MaDon,v1_0.PhuThu,v1_0.MaSuat,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 left join Ghe g1_0 on g1_0.MaGhe=v1_0.MaGhe where v1_0.MaDon=? order by g1_0.SoHang,g1_0.SoCot
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select sc1_0.MaSuat,sc1_0.Gia,sc1_0.GioChieu,sc1_0.NgayChieu,sc1_0.MaPhim,sc1_0.MaPhong from SuatChieu sc1_0 where sc1_0.MaSuat=?
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select count_big(g1_0.MaGhe) from Ghe g1_0 where g1_0.MaPhong=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaRap=?
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,v1_0.GiaVeCoBan,v1_0.MaDon,v1_0.PhuThu,v1_0.MaSuat,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 left join Ghe g1_0 on g1_0.MaGhe=v1_0.MaGhe where v1_0.MaDon=? order by g1_0.SoHang,g1_0.SoCot
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,v1_0.GiaVeCoBan,v1_0.MaDon,v1_0.PhuThu,v1_0.MaSuat,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 left join Ghe g1_0 on g1_0.MaGhe=v1_0.MaGhe where v1_0.MaDon=? order by g1_0.SoHang,g1_0.SoCot
+Hibernate: select nd1_0.id,nd1_0.password,nd1_0.role,nd1_0.username from NguoiDung nd1_0 where nd1_0.username=?
+Hibernate: select count_big(*) from KhachHang kh1_0 where kh1_0.MaKhachHang=?
+Hibernate: select hd1_0.MaDon,hd1_0.MaKhachHang,hd1_0.PhuongThucThanhToan,hd1_0.ThoiGianDat,hd1_0.ThoiGianThanhToan,hd1_0.TongTien,hd1_0.TrangThai from HoaDon hd1_0 where hd1_0.MaKhachHang=? order by hd1_0.ThoiGianDat desc
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,v1_0.GiaVeCoBan,v1_0.MaDon,v1_0.PhuThu,v1_0.MaSuat,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 left join Ghe g1_0 on g1_0.MaGhe=v1_0.MaGhe where v1_0.MaDon=? order by g1_0.SoHang,g1_0.SoCot
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select sc1_0.MaSuat,sc1_0.Gia,sc1_0.GioChieu,sc1_0.NgayChieu,sc1_0.MaPhim,sc1_0.MaPhong from SuatChieu sc1_0 where sc1_0.MaSuat=?
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select count_big(g1_0.MaGhe) from Ghe g1_0 where g1_0.MaPhong=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaRap=?
+Hibernate: select lg1_0.MaLoaiGhe,lg1_0.GiaPhuThu,lg1_0.TenLoaiGhe from LoaiGhe lg1_0 where lg1_0.MaLoaiGhe=?
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,v1_0.GiaVeCoBan,v1_0.MaDon,v1_0.PhuThu,v1_0.MaSuat,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 left join Ghe g1_0 on g1_0.MaGhe=v1_0.MaGhe where v1_0.MaDon=? order by g1_0.SoHang,g1_0.SoCot
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select sc1_0.MaSuat,sc1_0.Gia,sc1_0.GioChieu,sc1_0.NgayChieu,sc1_0.MaPhim,sc1_0.MaPhong from SuatChieu sc1_0 where sc1_0.MaSuat=?
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select count_big(g1_0.MaGhe) from Ghe g1_0 where g1_0.MaPhong=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaRap=?
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,v1_0.GiaVeCoBan,v1_0.MaDon,v1_0.PhuThu,v1_0.MaSuat,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 left join Ghe g1_0 on g1_0.MaGhe=v1_0.MaGhe where v1_0.MaDon=? order by g1_0.SoHang,g1_0.SoCot
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select sc1_0.MaSuat,sc1_0.Gia,sc1_0.GioChieu,sc1_0.NgayChieu,sc1_0.MaPhim,sc1_0.MaPhong from SuatChieu sc1_0 where sc1_0.MaSuat=?
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select count_big(g1_0.MaGhe) from Ghe g1_0 where g1_0.MaPhong=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaRap=?
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,v1_0.GiaVeCoBan,v1_0.MaDon,v1_0.PhuThu,v1_0.MaSuat,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 left join Ghe g1_0 on g1_0.MaGhe=v1_0.MaGhe where v1_0.MaDon=? order by g1_0.SoHang,g1_0.SoCot
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,v1_0.GiaVeCoBan,v1_0.MaDon,v1_0.PhuThu,v1_0.MaSuat,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 left join Ghe g1_0 on g1_0.MaGhe=v1_0.MaGhe where v1_0.MaDon=? order by g1_0.SoHang,g1_0.SoCot
+Hibernate: select nd1_0.id,nd1_0.password,nd1_0.role,nd1_0.username from NguoiDung nd1_0 where nd1_0.username=?
+Hibernate: select hd1_0.MaDon,hd1_0.MaKhachHang,hd1_0.PhuongThucThanhToan,hd1_0.ThoiGianDat,hd1_0.ThoiGianThanhToan,hd1_0.TongTien,hd1_0.TrangThai from HoaDon hd1_0 where hd1_0.MaDon=?
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,v1_0.GiaVeCoBan,v1_0.MaDon,v1_0.PhuThu,v1_0.MaSuat,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 left join Ghe g1_0 on g1_0.MaGhe=v1_0.MaGhe where v1_0.MaDon=? order by g1_0.SoHang,g1_0.SoCot
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select sc1_0.MaSuat,sc1_0.Gia,sc1_0.GioChieu,sc1_0.NgayChieu,sc1_0.MaPhim,sc1_0.MaPhong from SuatChieu sc1_0 where sc1_0.MaSuat=?
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select count_big(g1_0.MaGhe) from Ghe g1_0 where g1_0.MaPhong=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaRap=?
+Hibernate: select lg1_0.MaLoaiGhe,lg1_0.GiaPhuThu,lg1_0.TenLoaiGhe from LoaiGhe lg1_0 where lg1_0.MaLoaiGhe=?
+Hibernate: update HoaDon set MaKhachHang=?,PhuongThucThanhToan=?,ThoiGianDat=?,ThoiGianThanhToan=?,TongTien=?,TrangThai=? where MaDon=?
+Hibernate: update Ve set MaGhe=?,GiaVeCoBan=?,MaDon=?,PhuThu=?,MaSuat=?,ThanhTien=?,TrangThaiVe=? where MaVe=?
+Hibernate: update Ve set MaGhe=?,GiaVeCoBan=?,MaDon=?,PhuThu=?,MaSuat=?,ThanhTien=?,TrangThaiVe=? where MaVe=?
+Hibernate: select nd1_0.id,nd1_0.password,nd1_0.role,nd1_0.username from NguoiDung nd1_0 where nd1_0.username=?
+Hibernate: select count_big(*) from KhachHang kh1_0 where kh1_0.MaKhachHang=?
+Hibernate: select hd1_0.MaDon,hd1_0.MaKhachHang,hd1_0.PhuongThucThanhToan,hd1_0.ThoiGianDat,hd1_0.ThoiGianThanhToan,hd1_0.TongTien,hd1_0.TrangThai from HoaDon hd1_0 where hd1_0.MaKhachHang=? order by hd1_0.ThoiGianDat desc
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,v1_0.GiaVeCoBan,v1_0.MaDon,v1_0.PhuThu,v1_0.MaSuat,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 left join Ghe g1_0 on g1_0.MaGhe=v1_0.MaGhe where v1_0.MaDon=? order by g1_0.SoHang,g1_0.SoCot
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select sc1_0.MaSuat,sc1_0.Gia,sc1_0.GioChieu,sc1_0.NgayChieu,sc1_0.MaPhim,sc1_0.MaPhong from SuatChieu sc1_0 where sc1_0.MaSuat=?
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select count_big(g1_0.MaGhe) from Ghe g1_0 where g1_0.MaPhong=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaRap=?
+Hibernate: select lg1_0.MaLoaiGhe,lg1_0.GiaPhuThu,lg1_0.TenLoaiGhe from LoaiGhe lg1_0 where lg1_0.MaLoaiGhe=?
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,v1_0.GiaVeCoBan,v1_0.MaDon,v1_0.PhuThu,v1_0.MaSuat,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 left join Ghe g1_0 on g1_0.MaGhe=v1_0.MaGhe where v1_0.MaDon=? order by g1_0.SoHang,g1_0.SoCot
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select sc1_0.MaSuat,sc1_0.Gia,sc1_0.GioChieu,sc1_0.NgayChieu,sc1_0.MaPhim,sc1_0.MaPhong from SuatChieu sc1_0 where sc1_0.MaSuat=?
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select count_big(g1_0.MaGhe) from Ghe g1_0 where g1_0.MaPhong=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaRap=?
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,v1_0.GiaVeCoBan,v1_0.MaDon,v1_0.PhuThu,v1_0.MaSuat,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 left join Ghe g1_0 on g1_0.MaGhe=v1_0.MaGhe where v1_0.MaDon=? order by g1_0.SoHang,g1_0.SoCot
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select sc1_0.MaSuat,sc1_0.Gia,sc1_0.GioChieu,sc1_0.NgayChieu,sc1_0.MaPhim,sc1_0.MaPhong from SuatChieu sc1_0 where sc1_0.MaSuat=?
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select count_big(g1_0.MaGhe) from Ghe g1_0 where g1_0.MaPhong=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaRap=?
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,v1_0.GiaVeCoBan,v1_0.MaDon,v1_0.PhuThu,v1_0.MaSuat,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 left join Ghe g1_0 on g1_0.MaGhe=v1_0.MaGhe where v1_0.MaDon=? order by g1_0.SoHang,g1_0.SoCot
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,v1_0.GiaVeCoBan,v1_0.MaDon,v1_0.PhuThu,v1_0.MaSuat,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 left join Ghe g1_0 on g1_0.MaGhe=v1_0.MaGhe where v1_0.MaDon=? order by g1_0.SoHang,g1_0.SoCot
+Hibernate: select nd1_0.id,nd1_0.password,nd1_0.role,nd1_0.username from NguoiDung nd1_0 where nd1_0.username=?
+Hibernate: select hd1_0.MaDon,hd1_0.MaKhachHang,hd1_0.PhuongThucThanhToan,hd1_0.ThoiGianDat,hd1_0.ThoiGianThanhToan,hd1_0.TongTien,hd1_0.TrangThai from HoaDon hd1_0 where hd1_0.MaDon=?
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,v1_0.GiaVeCoBan,v1_0.MaDon,v1_0.PhuThu,v1_0.MaSuat,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 left join Ghe g1_0 on g1_0.MaGhe=v1_0.MaGhe where v1_0.MaDon=? order by g1_0.SoHang,g1_0.SoCot
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select sc1_0.MaSuat,sc1_0.Gia,sc1_0.GioChieu,sc1_0.NgayChieu,sc1_0.MaPhim,sc1_0.MaPhong from SuatChieu sc1_0 where sc1_0.MaSuat=?
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select count_big(g1_0.MaGhe) from Ghe g1_0 where g1_0.MaPhong=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaRap=?
+Hibernate: select lg1_0.MaLoaiGhe,lg1_0.GiaPhuThu,lg1_0.TenLoaiGhe from LoaiGhe lg1_0 where lg1_0.MaLoaiGhe=?
+Hibernate: select nd1_0.id,nd1_0.password,nd1_0.role,nd1_0.username from NguoiDung nd1_0 where nd1_0.username=?
+Hibernate: select hd1_0.MaDon,hd1_0.MaKhachHang,hd1_0.PhuongThucThanhToan,hd1_0.ThoiGianDat,hd1_0.ThoiGianThanhToan,hd1_0.TongTien,hd1_0.TrangThai from HoaDon hd1_0 where hd1_0.MaDon=?
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,v1_0.GiaVeCoBan,v1_0.MaDon,v1_0.PhuThu,v1_0.MaSuat,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 left join Ghe g1_0 on g1_0.MaGhe=v1_0.MaGhe where v1_0.MaDon=? order by g1_0.SoHang,g1_0.SoCot
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select sc1_0.MaSuat,sc1_0.Gia,sc1_0.GioChieu,sc1_0.NgayChieu,sc1_0.MaPhim,sc1_0.MaPhong from SuatChieu sc1_0 where sc1_0.MaSuat=?
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select count_big(g1_0.MaGhe) from Ghe g1_0 where g1_0.MaPhong=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaRap=?
+Hibernate: select lg1_0.MaLoaiGhe,lg1_0.GiaPhuThu,lg1_0.TenLoaiGhe from LoaiGhe lg1_0 where lg1_0.MaLoaiGhe=?
+Hibernate: select nd1_0.id,nd1_0.password,nd1_0.role,nd1_0.username from NguoiDung nd1_0 where nd1_0.username=?
+Hibernate: select count_big(*) from KhachHang kh1_0 where kh1_0.MaKhachHang=?
+Hibernate: select hd1_0.MaDon,hd1_0.MaKhachHang,hd1_0.PhuongThucThanhToan,hd1_0.ThoiGianDat,hd1_0.ThoiGianThanhToan,hd1_0.TongTien,hd1_0.TrangThai from HoaDon hd1_0 where hd1_0.MaKhachHang=? order by hd1_0.ThoiGianDat desc
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,v1_0.GiaVeCoBan,v1_0.MaDon,v1_0.PhuThu,v1_0.MaSuat,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 left join Ghe g1_0 on g1_0.MaGhe=v1_0.MaGhe where v1_0.MaDon=? order by g1_0.SoHang,g1_0.SoCot
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select sc1_0.MaSuat,sc1_0.Gia,sc1_0.GioChieu,sc1_0.NgayChieu,sc1_0.MaPhim,sc1_0.MaPhong from SuatChieu sc1_0 where sc1_0.MaSuat=?
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select count_big(g1_0.MaGhe) from Ghe g1_0 where g1_0.MaPhong=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaRap=?
+Hibernate: select lg1_0.MaLoaiGhe,lg1_0.GiaPhuThu,lg1_0.TenLoaiGhe from LoaiGhe lg1_0 where lg1_0.MaLoaiGhe=?
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,v1_0.GiaVeCoBan,v1_0.MaDon,v1_0.PhuThu,v1_0.MaSuat,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 left join Ghe g1_0 on g1_0.MaGhe=v1_0.MaGhe where v1_0.MaDon=? order by g1_0.SoHang,g1_0.SoCot
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select sc1_0.MaSuat,sc1_0.Gia,sc1_0.GioChieu,sc1_0.NgayChieu,sc1_0.MaPhim,sc1_0.MaPhong from SuatChieu sc1_0 where sc1_0.MaSuat=?
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select count_big(g1_0.MaGhe) from Ghe g1_0 where g1_0.MaPhong=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaRap=?
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,v1_0.GiaVeCoBan,v1_0.MaDon,v1_0.PhuThu,v1_0.MaSuat,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 left join Ghe g1_0 on g1_0.MaGhe=v1_0.MaGhe where v1_0.MaDon=? order by g1_0.SoHang,g1_0.SoCot
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select sc1_0.MaSuat,sc1_0.Gia,sc1_0.GioChieu,sc1_0.NgayChieu,sc1_0.MaPhim,sc1_0.MaPhong from SuatChieu sc1_0 where sc1_0.MaSuat=?
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select count_big(g1_0.MaGhe) from Ghe g1_0 where g1_0.MaPhong=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaRap=?
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,v1_0.GiaVeCoBan,v1_0.MaDon,v1_0.PhuThu,v1_0.MaSuat,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 left join Ghe g1_0 on g1_0.MaGhe=v1_0.MaGhe where v1_0.MaDon=? order by g1_0.SoHang,g1_0.SoCot
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,v1_0.GiaVeCoBan,v1_0.MaDon,v1_0.PhuThu,v1_0.MaSuat,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 left join Ghe g1_0 on g1_0.MaGhe=v1_0.MaGhe where v1_0.MaDon=? order by g1_0.SoHang,g1_0.SoCot
+Hibernate: select nd1_0.id,nd1_0.password,nd1_0.role,nd1_0.username from NguoiDung nd1_0 where nd1_0.username=?
+Hibernate: select count_big(*) from KhachHang kh1_0 where kh1_0.MaKhachHang=?
+Hibernate: select hd1_0.MaDon,hd1_0.MaKhachHang,hd1_0.PhuongThucThanhToan,hd1_0.ThoiGianDat,hd1_0.ThoiGianThanhToan,hd1_0.TongTien,hd1_0.TrangThai from HoaDon hd1_0 where hd1_0.MaKhachHang=? order by hd1_0.ThoiGianDat desc
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,v1_0.GiaVeCoBan,v1_0.MaDon,v1_0.PhuThu,v1_0.MaSuat,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 left join Ghe g1_0 on g1_0.MaGhe=v1_0.MaGhe where v1_0.MaDon=? order by g1_0.SoHang,g1_0.SoCot
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select sc1_0.MaSuat,sc1_0.Gia,sc1_0.GioChieu,sc1_0.NgayChieu,sc1_0.MaPhim,sc1_0.MaPhong from SuatChieu sc1_0 where sc1_0.MaSuat=?
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select count_big(g1_0.MaGhe) from Ghe g1_0 where g1_0.MaPhong=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaRap=?
+Hibernate: select lg1_0.MaLoaiGhe,lg1_0.GiaPhuThu,lg1_0.TenLoaiGhe from LoaiGhe lg1_0 where lg1_0.MaLoaiGhe=?
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,v1_0.GiaVeCoBan,v1_0.MaDon,v1_0.PhuThu,v1_0.MaSuat,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 left join Ghe g1_0 on g1_0.MaGhe=v1_0.MaGhe where v1_0.MaDon=? order by g1_0.SoHang,g1_0.SoCot
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select sc1_0.MaSuat,sc1_0.Gia,sc1_0.GioChieu,sc1_0.NgayChieu,sc1_0.MaPhim,sc1_0.MaPhong from SuatChieu sc1_0 where sc1_0.MaSuat=?
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select count_big(g1_0.MaGhe) from Ghe g1_0 where g1_0.MaPhong=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaRap=?
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,v1_0.GiaVeCoBan,v1_0.MaDon,v1_0.PhuThu,v1_0.MaSuat,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 left join Ghe g1_0 on g1_0.MaGhe=v1_0.MaGhe where v1_0.MaDon=? order by g1_0.SoHang,g1_0.SoCot
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select sc1_0.MaSuat,sc1_0.Gia,sc1_0.GioChieu,sc1_0.NgayChieu,sc1_0.MaPhim,sc1_0.MaPhong from SuatChieu sc1_0 where sc1_0.MaSuat=?
+Hibernate: select g1_0.MaGhe,g1_0.MaLoaiGhe,g1_0.MaPhong,g1_0.SoCot,g1_0.SoHang from Ghe g1_0 where g1_0.MaGhe=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select count_big(g1_0.MaGhe) from Ghe g1_0 where g1_0.MaPhong=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaRap=?
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,v1_0.GiaVeCoBan,v1_0.MaDon,v1_0.PhuThu,v1_0.MaSuat,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 left join Ghe g1_0 on g1_0.MaGhe=v1_0.MaGhe where v1_0.MaDon=? order by g1_0.SoHang,g1_0.SoCot
+Hibernate: select v1_0.MaVe,v1_0.MaGhe,v1_0.GiaVeCoBan,v1_0.MaDon,v1_0.PhuThu,v1_0.MaSuat,v1_0.ThanhTien,v1_0.TrangThaiVe from Ve v1_0 left join Ghe g1_0 on g1_0.MaGhe=v1_0.MaGhe where v1_0.MaDon=? order by g1_0.SoHang,g1_0.SoCot
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select tl1_0.MaPhim,tl1_1.MaTheLoai,tl1_1.TenTheLoai from PhimTheLoai tl1_0 join TheLoai tl1_1 on tl1_1.MaTheLoai=tl1_0.MaTheLoai where tl1_0.MaPhim=?
+Hibernate: select sc1_0.MaSuat,sc1_0.Gia,sc1_0.GioChieu,sc1_0.NgayChieu,sc1_0.MaPhim,sc1_0.MaPhong from SuatChieu sc1_0
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaRap=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaRap=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaRap=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaRap=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaRap=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaRap=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaRap=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaRap=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaRap=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaRap=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaRap=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select r1_0.MaRap,r1_0.DiaChi,r1_0.TenRap,r1_0.MaThanhPho from Rap r1_0 where r1_0.MaRap=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select pc1_0.MaPhong,pc1_0.MaLoaiPhong,pc1_0.MaRap,pc1_0.SucChua,pc1_0.TenPhong from PhongChieu pc1_0 where pc1_0.MaPhong=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate: select p1_0.MaPhim,p1_0.DoTuoiPhuHop,p1_0.MoTa,p1_0.NgayKhoiChieu,p1_0.NgonNgu,p1_0.Poster,p1_0.TenPhim,p1_0.ThoiLuong,p1_0.TrailerUrl from Phim p1_0 where p1_0.MaPhim=?
+Hibernate:     SELECT
+        s.MaSuat,
+        CONVERT(VARCHAR(5), s.GioChieu, 108) AS GioChieu,
+        s.Gia,
+        ph.MaPhong,
+        ph.TenPhong,
+        lp.TenLoaiPhong,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) AS TongGhe,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) - (
+            SELECT COUNT(*)
+            FROM Ve v
+            JOIN HoaDon hd ON hd.MaDon = v.MaDon
+            WHERE v.MaSuat = s.MaSuat
+              AND (
+                v.TrangThaiVe = 'DA_THANH_TOAN'
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('CHUA_THANH_TOAN', N'Ch? thanh to�n')
+                    AND hd.ThoiGianDat >= DATEADD(MINUTE, -10, GETDATE())
+                )
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('DA_THANH_TOAN', N'�? thanh to�n')
+                )
+              )
+        ) AS SoGheTrong
+    FROM SuatChieu s
+    LEFT JOIN PhongChieu ph ON s.MaPhong = ph.MaPhong
+    LEFT JOIN LoaiPhong lp ON ph.MaLoaiPhong = lp.MaLoaiPhong
+    WHERE s.MaPhim = ?
+      AND s.NgayChieu = ?
+      AND (ph.MaRap = ? OR s.MaRap = ?)
+    ORDER BY s.GioChieu
+
+Hibernate:     SELECT
+        s.MaSuat,
+        CONVERT(VARCHAR(5), s.GioChieu, 108) AS GioChieu,
+        s.Gia,
+        ph.MaPhong,
+        ph.TenPhong,
+        lp.TenLoaiPhong,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) AS TongGhe,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) - (
+            SELECT COUNT(*)
+            FROM Ve v
+            JOIN HoaDon hd ON hd.MaDon = v.MaDon
+            WHERE v.MaSuat = s.MaSuat
+              AND (
+                v.TrangThaiVe = 'DA_THANH_TOAN'
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('CHUA_THANH_TOAN', N'Ch? thanh to�n')
+                    AND hd.ThoiGianDat >= DATEADD(MINUTE, -10, GETDATE())
+                )
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('DA_THANH_TOAN', N'�? thanh to�n')
+                )
+              )
+        ) AS SoGheTrong
+    FROM SuatChieu s
+    LEFT JOIN PhongChieu ph ON s.MaPhong = ph.MaPhong
+    LEFT JOIN LoaiPhong lp ON ph.MaLoaiPhong = lp.MaLoaiPhong
+    WHERE s.MaPhim = ?
+      AND s.NgayChieu = ?
+      AND (ph.MaRap = ? OR s.MaRap = ?)
+    ORDER BY s.GioChieu
+
+Hibernate:     SELECT
+        s.MaSuat,
+        CONVERT(VARCHAR(5), s.GioChieu, 108) AS GioChieu,
+        s.Gia,
+        ph.MaPhong,
+        ph.TenPhong,
+        lp.TenLoaiPhong,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) AS TongGhe,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) - (
+            SELECT COUNT(*)
+            FROM Ve v
+            JOIN HoaDon hd ON hd.MaDon = v.MaDon
+            WHERE v.MaSuat = s.MaSuat
+              AND (
+                v.TrangThaiVe = 'DA_THANH_TOAN'
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('CHUA_THANH_TOAN', N'Ch? thanh to�n')
+                    AND hd.ThoiGianDat >= DATEADD(MINUTE, -10, GETDATE())
+                )
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('DA_THANH_TOAN', N'�? thanh to�n')
+                )
+              )
+        ) AS SoGheTrong
+    FROM SuatChieu s
+    LEFT JOIN PhongChieu ph ON s.MaPhong = ph.MaPhong
+    LEFT JOIN LoaiPhong lp ON ph.MaLoaiPhong = lp.MaLoaiPhong
+    WHERE s.MaPhim = ?
+      AND s.NgayChieu = ?
+      AND (ph.MaRap = ? OR s.MaRap = ?)
+    ORDER BY s.GioChieu
+
+Hibernate:     SELECT
+        s.MaSuat,
+        CONVERT(VARCHAR(5), s.GioChieu, 108) AS GioChieu,
+        s.Gia,
+        ph.MaPhong,
+        ph.TenPhong,
+        lp.TenLoaiPhong,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) AS TongGhe,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) - (
+            SELECT COUNT(*)
+            FROM Ve v
+            JOIN HoaDon hd ON hd.MaDon = v.MaDon
+            WHERE v.MaSuat = s.MaSuat
+              AND (
+                v.TrangThaiVe = 'DA_THANH_TOAN'
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('CHUA_THANH_TOAN', N'Ch? thanh to�n')
+                    AND hd.ThoiGianDat >= DATEADD(MINUTE, -10, GETDATE())
+                )
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('DA_THANH_TOAN', N'�? thanh to�n')
+                )
+              )
+        ) AS SoGheTrong
+    FROM SuatChieu s
+    LEFT JOIN PhongChieu ph ON s.MaPhong = ph.MaPhong
+    LEFT JOIN LoaiPhong lp ON ph.MaLoaiPhong = lp.MaLoaiPhong
+    WHERE s.MaPhim = ?
+      AND s.NgayChieu = ?
+      AND (ph.MaRap = ? OR s.MaRap = ?)
+    ORDER BY s.GioChieu
+
+Hibernate:     SELECT
+        s.MaSuat,
+        CONVERT(VARCHAR(5), s.GioChieu, 108) AS GioChieu,
+        s.Gia,
+        ph.MaPhong,
+        ph.TenPhong,
+        lp.TenLoaiPhong,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) AS TongGhe,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) - (
+            SELECT COUNT(*)
+            FROM Ve v
+            JOIN HoaDon hd ON hd.MaDon = v.MaDon
+            WHERE v.MaSuat = s.MaSuat
+              AND (
+                v.TrangThaiVe = 'DA_THANH_TOAN'
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('CHUA_THANH_TOAN', N'Ch? thanh to�n')
+                    AND hd.ThoiGianDat >= DATEADD(MINUTE, -10, GETDATE())
+                )
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('DA_THANH_TOAN', N'�? thanh to�n')
+                )
+              )
+        ) AS SoGheTrong
+    FROM SuatChieu s
+    LEFT JOIN PhongChieu ph ON s.MaPhong = ph.MaPhong
+    LEFT JOIN LoaiPhong lp ON ph.MaLoaiPhong = lp.MaLoaiPhong
+    WHERE s.MaPhim = ?
+      AND s.NgayChieu = ?
+      AND (ph.MaRap = ? OR s.MaRap = ?)
+    ORDER BY s.GioChieu
+
+Hibernate:     SELECT
+        s.MaSuat,
+        CONVERT(VARCHAR(5), s.GioChieu, 108) AS GioChieu,
+        s.Gia,
+        ph.MaPhong,
+        ph.TenPhong,
+        lp.TenLoaiPhong,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) AS TongGhe,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) - (
+            SELECT COUNT(*)
+            FROM Ve v
+            JOIN HoaDon hd ON hd.MaDon = v.MaDon
+            WHERE v.MaSuat = s.MaSuat
+              AND (
+                v.TrangThaiVe = 'DA_THANH_TOAN'
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('CHUA_THANH_TOAN', N'Ch? thanh to�n')
+                    AND hd.ThoiGianDat >= DATEADD(MINUTE, -10, GETDATE())
+                )
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('DA_THANH_TOAN', N'�? thanh to�n')
+                )
+              )
+        ) AS SoGheTrong
+    FROM SuatChieu s
+    LEFT JOIN PhongChieu ph ON s.MaPhong = ph.MaPhong
+    LEFT JOIN LoaiPhong lp ON ph.MaLoaiPhong = lp.MaLoaiPhong
+    WHERE s.MaPhim = ?
+      AND s.NgayChieu = ?
+      AND (ph.MaRap = ? OR s.MaRap = ?)
+    ORDER BY s.GioChieu
+
+Hibernate:     SELECT
+        s.MaSuat,
+        CONVERT(VARCHAR(5), s.GioChieu, 108) AS GioChieu,
+        s.Gia,
+        ph.MaPhong,
+        ph.TenPhong,
+        lp.TenLoaiPhong,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) AS TongGhe,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) - (
+            SELECT COUNT(*)
+            FROM Ve v
+            JOIN HoaDon hd ON hd.MaDon = v.MaDon
+            WHERE v.MaSuat = s.MaSuat
+              AND (
+                v.TrangThaiVe = 'DA_THANH_TOAN'
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('CHUA_THANH_TOAN', N'Ch? thanh to�n')
+                    AND hd.ThoiGianDat >= DATEADD(MINUTE, -10, GETDATE())
+                )
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('DA_THANH_TOAN', N'�? thanh to�n')
+                )
+              )
+        ) AS SoGheTrong
+    FROM SuatChieu s
+    LEFT JOIN PhongChieu ph ON s.MaPhong = ph.MaPhong
+    LEFT JOIN LoaiPhong lp ON ph.MaLoaiPhong = lp.MaLoaiPhong
+    WHERE s.MaPhim = ?
+      AND s.NgayChieu = ?
+      AND (ph.MaRap = ? OR s.MaRap = ?)
+    ORDER BY s.GioChieu
+
+Hibernate:     SELECT
+        s.MaSuat,
+        CONVERT(VARCHAR(5), s.GioChieu, 108) AS GioChieu,
+        s.Gia,
+        ph.MaPhong,
+        ph.TenPhong,
+        lp.TenLoaiPhong,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) AS TongGhe,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) - (
+            SELECT COUNT(*)
+            FROM Ve v
+            JOIN HoaDon hd ON hd.MaDon = v.MaDon
+            WHERE v.MaSuat = s.MaSuat
+              AND (
+                v.TrangThaiVe = 'DA_THANH_TOAN'
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('CHUA_THANH_TOAN', N'Ch? thanh to�n')
+                    AND hd.ThoiGianDat >= DATEADD(MINUTE, -10, GETDATE())
+                )
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('DA_THANH_TOAN', N'�? thanh to�n')
+                )
+              )
+        ) AS SoGheTrong
+    FROM SuatChieu s
+    LEFT JOIN PhongChieu ph ON s.MaPhong = ph.MaPhong
+    LEFT JOIN LoaiPhong lp ON ph.MaLoaiPhong = lp.MaLoaiPhong
+    WHERE s.MaPhim = ?
+      AND s.NgayChieu = ?
+      AND (ph.MaRap = ? OR s.MaRap = ?)
+    ORDER BY s.GioChieu
+
+Hibernate:     SELECT
+        s.MaSuat,
+        CONVERT(VARCHAR(5), s.GioChieu, 108) AS GioChieu,
+        s.Gia,
+        ph.MaPhong,
+        ph.TenPhong,
+        lp.TenLoaiPhong,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) AS TongGhe,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) - (
+            SELECT COUNT(*)
+            FROM Ve v
+            JOIN HoaDon hd ON hd.MaDon = v.MaDon
+            WHERE v.MaSuat = s.MaSuat
+              AND (
+                v.TrangThaiVe = 'DA_THANH_TOAN'
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('CHUA_THANH_TOAN', N'Ch? thanh to�n')
+                    AND hd.ThoiGianDat >= DATEADD(MINUTE, -10, GETDATE())
+                )
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('DA_THANH_TOAN', N'�? thanh to�n')
+                )
+              )
+        ) AS SoGheTrong
+    FROM SuatChieu s
+    LEFT JOIN PhongChieu ph ON s.MaPhong = ph.MaPhong
+    LEFT JOIN LoaiPhong lp ON ph.MaLoaiPhong = lp.MaLoaiPhong
+    WHERE s.MaPhim = ?
+      AND s.NgayChieu = ?
+      AND (ph.MaRap = ? OR s.MaRap = ?)
+    ORDER BY s.GioChieu
+
+Hibernate:     SELECT
+        s.MaSuat,
+        CONVERT(VARCHAR(5), s.GioChieu, 108) AS GioChieu,
+        s.Gia,
+        ph.MaPhong,
+        ph.TenPhong,
+        lp.TenLoaiPhong,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) AS TongGhe,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) - (
+            SELECT COUNT(*)
+            FROM Ve v
+            JOIN HoaDon hd ON hd.MaDon = v.MaDon
+            WHERE v.MaSuat = s.MaSuat
+              AND (
+                v.TrangThaiVe = 'DA_THANH_TOAN'
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('CHUA_THANH_TOAN', N'Ch? thanh to�n')
+                    AND hd.ThoiGianDat >= DATEADD(MINUTE, -10, GETDATE())
+                )
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('DA_THANH_TOAN', N'�? thanh to�n')
+                )
+              )
+        ) AS SoGheTrong
+    FROM SuatChieu s
+    LEFT JOIN PhongChieu ph ON s.MaPhong = ph.MaPhong
+    LEFT JOIN LoaiPhong lp ON ph.MaLoaiPhong = lp.MaLoaiPhong
+    WHERE s.MaPhim = ?
+      AND s.NgayChieu = ?
+      AND (ph.MaRap = ? OR s.MaRap = ?)
+    ORDER BY s.GioChieu
+
+Hibernate:     SELECT
+        s.MaSuat,
+        CONVERT(VARCHAR(5), s.GioChieu, 108) AS GioChieu,
+        s.Gia,
+        ph.MaPhong,
+        ph.TenPhong,
+        lp.TenLoaiPhong,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) AS TongGhe,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) - (
+            SELECT COUNT(*)
+            FROM Ve v
+            JOIN HoaDon hd ON hd.MaDon = v.MaDon
+            WHERE v.MaSuat = s.MaSuat
+              AND (
+                v.TrangThaiVe = 'DA_THANH_TOAN'
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('CHUA_THANH_TOAN', N'Ch? thanh to�n')
+                    AND hd.ThoiGianDat >= DATEADD(MINUTE, -10, GETDATE())
+                )
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('DA_THANH_TOAN', N'�? thanh to�n')
+                )
+              )
+        ) AS SoGheTrong
+    FROM SuatChieu s
+    LEFT JOIN PhongChieu ph ON s.MaPhong = ph.MaPhong
+    LEFT JOIN LoaiPhong lp ON ph.MaLoaiPhong = lp.MaLoaiPhong
+    WHERE s.MaPhim = ?
+      AND s.NgayChieu = ?
+      AND (ph.MaRap = ? OR s.MaRap = ?)
+    ORDER BY s.GioChieu
+
+Hibernate:     SELECT
+        s.MaSuat,
+        CONVERT(VARCHAR(5), s.GioChieu, 108) AS GioChieu,
+        s.Gia,
+        ph.MaPhong,
+        ph.TenPhong,
+        lp.TenLoaiPhong,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) AS TongGhe,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) - (
+            SELECT COUNT(*)
+            FROM Ve v
+            JOIN HoaDon hd ON hd.MaDon = v.MaDon
+            WHERE v.MaSuat = s.MaSuat
+              AND (
+                v.TrangThaiVe = 'DA_THANH_TOAN'
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('CHUA_THANH_TOAN', N'Ch? thanh to�n')
+                    AND hd.ThoiGianDat >= DATEADD(MINUTE, -10, GETDATE())
+                )
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('DA_THANH_TOAN', N'�? thanh to�n')
+                )
+              )
+        ) AS SoGheTrong
+    FROM SuatChieu s
+    LEFT JOIN PhongChieu ph ON s.MaPhong = ph.MaPhong
+    LEFT JOIN LoaiPhong lp ON ph.MaLoaiPhong = lp.MaLoaiPhong
+    WHERE s.MaPhim = ?
+      AND s.NgayChieu = ?
+      AND (ph.MaRap = ? OR s.MaRap = ?)
+    ORDER BY s.GioChieu
+
+Hibernate:     SELECT
+        s.MaSuat,
+        CONVERT(VARCHAR(5), s.GioChieu, 108) AS GioChieu,
+        s.Gia,
+        ph.MaPhong,
+        ph.TenPhong,
+        lp.TenLoaiPhong,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) AS TongGhe,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) - (
+            SELECT COUNT(*)
+            FROM Ve v
+            JOIN HoaDon hd ON hd.MaDon = v.MaDon
+            WHERE v.MaSuat = s.MaSuat
+              AND (
+                v.TrangThaiVe = 'DA_THANH_TOAN'
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('CHUA_THANH_TOAN', N'Ch? thanh to�n')
+                    AND hd.ThoiGianDat >= DATEADD(MINUTE, -10, GETDATE())
+                )
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('DA_THANH_TOAN', N'�? thanh to�n')
+                )
+              )
+        ) AS SoGheTrong
+    FROM SuatChieu s
+    LEFT JOIN PhongChieu ph ON s.MaPhong = ph.MaPhong
+    LEFT JOIN LoaiPhong lp ON ph.MaLoaiPhong = lp.MaLoaiPhong
+    WHERE s.MaPhim = ?
+      AND s.NgayChieu = ?
+      AND (ph.MaRap = ? OR s.MaRap = ?)
+    ORDER BY s.GioChieu
+
+Hibernate:     SELECT
+        s.MaSuat,
+        CONVERT(VARCHAR(5), s.GioChieu, 108) AS GioChieu,
+        s.Gia,
+        ph.MaPhong,
+        ph.TenPhong,
+        lp.TenLoaiPhong,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) AS TongGhe,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) - (
+            SELECT COUNT(*)
+            FROM Ve v
+            JOIN HoaDon hd ON hd.MaDon = v.MaDon
+            WHERE v.MaSuat = s.MaSuat
+              AND (
+                v.TrangThaiVe = 'DA_THANH_TOAN'
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('CHUA_THANH_TOAN', N'Ch? thanh to�n')
+                    AND hd.ThoiGianDat >= DATEADD(MINUTE, -10, GETDATE())
+                )
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('DA_THANH_TOAN', N'�? thanh to�n')
+                )
+              )
+        ) AS SoGheTrong
+    FROM SuatChieu s
+    LEFT JOIN PhongChieu ph ON s.MaPhong = ph.MaPhong
+    LEFT JOIN LoaiPhong lp ON ph.MaLoaiPhong = lp.MaLoaiPhong
+    WHERE s.MaPhim = ?
+      AND s.NgayChieu = ?
+      AND (ph.MaRap = ? OR s.MaRap = ?)
+    ORDER BY s.GioChieu
+
+Hibernate:     SELECT
+        s.MaSuat,
+        CONVERT(VARCHAR(5), s.GioChieu, 108) AS GioChieu,
+        s.Gia,
+        ph.MaPhong,
+        ph.TenPhong,
+        lp.TenLoaiPhong,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) AS TongGhe,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) - (
+            SELECT COUNT(*)
+            FROM Ve v
+            JOIN HoaDon hd ON hd.MaDon = v.MaDon
+            WHERE v.MaSuat = s.MaSuat
+              AND (
+                v.TrangThaiVe = 'DA_THANH_TOAN'
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('CHUA_THANH_TOAN', N'Ch? thanh to�n')
+                    AND hd.ThoiGianDat >= DATEADD(MINUTE, -10, GETDATE())
+                )
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('DA_THANH_TOAN', N'�? thanh to�n')
+                )
+              )
+        ) AS SoGheTrong
+    FROM SuatChieu s
+    LEFT JOIN PhongChieu ph ON s.MaPhong = ph.MaPhong
+    LEFT JOIN LoaiPhong lp ON ph.MaLoaiPhong = lp.MaLoaiPhong
+    WHERE s.MaPhim = ?
+      AND s.NgayChieu = ?
+      AND (ph.MaRap = ? OR s.MaRap = ?)
+    ORDER BY s.GioChieu
+
+Hibernate:     SELECT
+        s.MaSuat,
+        CONVERT(VARCHAR(5), s.GioChieu, 108) AS GioChieu,
+        s.Gia,
+        ph.MaPhong,
+        ph.TenPhong,
+        lp.TenLoaiPhong,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) AS TongGhe,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) - (
+            SELECT COUNT(*)
+            FROM Ve v
+            JOIN HoaDon hd ON hd.MaDon = v.MaDon
+            WHERE v.MaSuat = s.MaSuat
+              AND (
+                v.TrangThaiVe = 'DA_THANH_TOAN'
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('CHUA_THANH_TOAN', N'Ch? thanh to�n')
+                    AND hd.ThoiGianDat >= DATEADD(MINUTE, -10, GETDATE())
+                )
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('DA_THANH_TOAN', N'�? thanh to�n')
+                )
+              )
+        ) AS SoGheTrong
+    FROM SuatChieu s
+    LEFT JOIN PhongChieu ph ON s.MaPhong = ph.MaPhong
+    LEFT JOIN LoaiPhong lp ON ph.MaLoaiPhong = lp.MaLoaiPhong
+    WHERE s.MaPhim = ?
+      AND s.NgayChieu = ?
+      AND (ph.MaRap = ? OR s.MaRap = ?)
+    ORDER BY s.GioChieu
+
+Hibernate:     SELECT
+        s.MaSuat,
+        CONVERT(VARCHAR(5), s.GioChieu, 108) AS GioChieu,
+        s.Gia,
+        ph.MaPhong,
+        ph.TenPhong,
+        lp.TenLoaiPhong,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) AS TongGhe,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) - (
+            SELECT COUNT(*)
+            FROM Ve v
+            JOIN HoaDon hd ON hd.MaDon = v.MaDon
+            WHERE v.MaSuat = s.MaSuat
+              AND (
+                v.TrangThaiVe = 'DA_THANH_TOAN'
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('CHUA_THANH_TOAN', N'Ch? thanh to�n')
+                    AND hd.ThoiGianDat >= DATEADD(MINUTE, -10, GETDATE())
+                )
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('DA_THANH_TOAN', N'�? thanh to�n')
+                )
+              )
+        ) AS SoGheTrong
+    FROM SuatChieu s
+    LEFT JOIN PhongChieu ph ON s.MaPhong = ph.MaPhong
+    LEFT JOIN LoaiPhong lp ON ph.MaLoaiPhong = lp.MaLoaiPhong
+    WHERE s.MaPhim = ?
+      AND s.NgayChieu = ?
+      AND (ph.MaRap = ? OR s.MaRap = ?)
+    ORDER BY s.GioChieu
+
+Hibernate:     SELECT
+        s.MaSuat,
+        CONVERT(VARCHAR(5), s.GioChieu, 108) AS GioChieu,
+        s.Gia,
+        ph.MaPhong,
+        ph.TenPhong,
+        lp.TenLoaiPhong,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) AS TongGhe,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) - (
+            SELECT COUNT(*)
+            FROM Ve v
+            JOIN HoaDon hd ON hd.MaDon = v.MaDon
+            WHERE v.MaSuat = s.MaSuat
+              AND (
+                v.TrangThaiVe = 'DA_THANH_TOAN'
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('CHUA_THANH_TOAN', N'Ch? thanh to�n')
+                    AND hd.ThoiGianDat >= DATEADD(MINUTE, -10, GETDATE())
+                )
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('DA_THANH_TOAN', N'�? thanh to�n')
+                )
+              )
+        ) AS SoGheTrong
+    FROM SuatChieu s
+    LEFT JOIN PhongChieu ph ON s.MaPhong = ph.MaPhong
+    LEFT JOIN LoaiPhong lp ON ph.MaLoaiPhong = lp.MaLoaiPhong
+    WHERE s.MaPhim = ?
+      AND s.NgayChieu = ?
+      AND (ph.MaRap = ? OR s.MaRap = ?)
+    ORDER BY s.GioChieu
+
+Hibernate:     SELECT
+        s.MaSuat,
+        CONVERT(VARCHAR(5), s.GioChieu, 108) AS GioChieu,
+        s.Gia,
+        ph.MaPhong,
+        ph.TenPhong,
+        lp.TenLoaiPhong,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) AS TongGhe,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) - (
+            SELECT COUNT(*)
+            FROM Ve v
+            JOIN HoaDon hd ON hd.MaDon = v.MaDon
+            WHERE v.MaSuat = s.MaSuat
+              AND (
+                v.TrangThaiVe = 'DA_THANH_TOAN'
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('CHUA_THANH_TOAN', N'Ch? thanh to�n')
+                    AND hd.ThoiGianDat >= DATEADD(MINUTE, -10, GETDATE())
+                )
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('DA_THANH_TOAN', N'�? thanh to�n')
+                )
+              )
+        ) AS SoGheTrong
+    FROM SuatChieu s
+    LEFT JOIN PhongChieu ph ON s.MaPhong = ph.MaPhong
+    LEFT JOIN LoaiPhong lp ON ph.MaLoaiPhong = lp.MaLoaiPhong
+    WHERE s.MaPhim = ?
+      AND s.NgayChieu = ?
+      AND (ph.MaRap = ? OR s.MaRap = ?)
+    ORDER BY s.GioChieu
+
+Hibernate:     SELECT
+        s.MaSuat,
+        CONVERT(VARCHAR(5), s.GioChieu, 108) AS GioChieu,
+        s.Gia,
+        ph.MaPhong,
+        ph.TenPhong,
+        lp.TenLoaiPhong,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) AS TongGhe,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) - (
+            SELECT COUNT(*)
+            FROM Ve v
+            JOIN HoaDon hd ON hd.MaDon = v.MaDon
+            WHERE v.MaSuat = s.MaSuat
+              AND (
+                v.TrangThaiVe = 'DA_THANH_TOAN'
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('CHUA_THANH_TOAN', N'Ch? thanh to�n')
+                    AND hd.ThoiGianDat >= DATEADD(MINUTE, -10, GETDATE())
+                )
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('DA_THANH_TOAN', N'�? thanh to�n')
+                )
+              )
+        ) AS SoGheTrong
+    FROM SuatChieu s
+    LEFT JOIN PhongChieu ph ON s.MaPhong = ph.MaPhong
+    LEFT JOIN LoaiPhong lp ON ph.MaLoaiPhong = lp.MaLoaiPhong
+    WHERE s.MaPhim = ?
+      AND s.NgayChieu = ?
+      AND (ph.MaRap = ? OR s.MaRap = ?)
+    ORDER BY s.GioChieu
+
+Hibernate:     SELECT
+        s.MaSuat,
+        CONVERT(VARCHAR(5), s.GioChieu, 108) AS GioChieu,
+        s.Gia,
+        ph.MaPhong,
+        ph.TenPhong,
+        lp.TenLoaiPhong,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) AS TongGhe,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) - (
+            SELECT COUNT(*)
+            FROM Ve v
+            JOIN HoaDon hd ON hd.MaDon = v.MaDon
+            WHERE v.MaSuat = s.MaSuat
+              AND (
+                v.TrangThaiVe = 'DA_THANH_TOAN'
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('CHUA_THANH_TOAN', N'Ch? thanh to�n')
+                    AND hd.ThoiGianDat >= DATEADD(MINUTE, -10, GETDATE())
+                )
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('DA_THANH_TOAN', N'�? thanh to�n')
+                )
+              )
+        ) AS SoGheTrong
+    FROM SuatChieu s
+    LEFT JOIN PhongChieu ph ON s.MaPhong = ph.MaPhong
+    LEFT JOIN LoaiPhong lp ON ph.MaLoaiPhong = lp.MaLoaiPhong
+    WHERE s.MaPhim = ?
+      AND s.NgayChieu = ?
+      AND (ph.MaRap = ? OR s.MaRap = ?)
+    ORDER BY s.GioChieu
+
+Hibernate:     SELECT
+        s.MaSuat,
+        CONVERT(VARCHAR(5), s.GioChieu, 108) AS GioChieu,
+        s.Gia,
+        ph.MaPhong,
+        ph.TenPhong,
+        lp.TenLoaiPhong,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) AS TongGhe,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) - (
+            SELECT COUNT(*)
+            FROM Ve v
+            JOIN HoaDon hd ON hd.MaDon = v.MaDon
+            WHERE v.MaSuat = s.MaSuat
+              AND (
+                v.TrangThaiVe = 'DA_THANH_TOAN'
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('CHUA_THANH_TOAN', N'Ch? thanh to�n')
+                    AND hd.ThoiGianDat >= DATEADD(MINUTE, -10, GETDATE())
+                )
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('DA_THANH_TOAN', N'�? thanh to�n')
+                )
+              )
+        ) AS SoGheTrong
+    FROM SuatChieu s
+    LEFT JOIN PhongChieu ph ON s.MaPhong = ph.MaPhong
+    LEFT JOIN LoaiPhong lp ON ph.MaLoaiPhong = lp.MaLoaiPhong
+    WHERE s.MaPhim = ?
+      AND s.NgayChieu = ?
+      AND (ph.MaRap = ? OR s.MaRap = ?)
+    ORDER BY s.GioChieu
+
+Hibernate:     SELECT
+        s.MaSuat,
+        CONVERT(VARCHAR(5), s.GioChieu, 108) AS GioChieu,
+        s.Gia,
+        ph.MaPhong,
+        ph.TenPhong,
+        lp.TenLoaiPhong,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) AS TongGhe,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) - (
+            SELECT COUNT(*)
+            FROM Ve v
+            JOIN HoaDon hd ON hd.MaDon = v.MaDon
+            WHERE v.MaSuat = s.MaSuat
+              AND (
+                v.TrangThaiVe = 'DA_THANH_TOAN'
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('CHUA_THANH_TOAN', N'Ch? thanh to�n')
+                    AND hd.ThoiGianDat >= DATEADD(MINUTE, -10, GETDATE())
+                )
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('DA_THANH_TOAN', N'�? thanh to�n')
+                )
+              )
+        ) AS SoGheTrong
+    FROM SuatChieu s
+    LEFT JOIN PhongChieu ph ON s.MaPhong = ph.MaPhong
+    LEFT JOIN LoaiPhong lp ON ph.MaLoaiPhong = lp.MaLoaiPhong
+    WHERE s.MaPhim = ?
+      AND s.NgayChieu = ?
+      AND (ph.MaRap = ? OR s.MaRap = ?)
+    ORDER BY s.GioChieu
+
+Hibernate:     SELECT
+        s.MaSuat,
+        CONVERT(VARCHAR(5), s.GioChieu, 108) AS GioChieu,
+        s.Gia,
+        ph.MaPhong,
+        ph.TenPhong,
+        lp.TenLoaiPhong,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) AS TongGhe,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) - (
+            SELECT COUNT(*)
+            FROM Ve v
+            JOIN HoaDon hd ON hd.MaDon = v.MaDon
+            WHERE v.MaSuat = s.MaSuat
+              AND (
+                v.TrangThaiVe = 'DA_THANH_TOAN'
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('CHUA_THANH_TOAN', N'Ch? thanh to�n')
+                    AND hd.ThoiGianDat >= DATEADD(MINUTE, -10, GETDATE())
+                )
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('DA_THANH_TOAN', N'�? thanh to�n')
+                )
+              )
+        ) AS SoGheTrong
+    FROM SuatChieu s
+    LEFT JOIN PhongChieu ph ON s.MaPhong = ph.MaPhong
+    LEFT JOIN LoaiPhong lp ON ph.MaLoaiPhong = lp.MaLoaiPhong
+    WHERE s.MaPhim = ?
+      AND s.NgayChieu = ?
+      AND (ph.MaRap = ? OR s.MaRap = ?)
+    ORDER BY s.GioChieu
+
+Hibernate:     SELECT
+        s.MaSuat,
+        CONVERT(VARCHAR(5), s.GioChieu, 108) AS GioChieu,
+        s.Gia,
+        ph.MaPhong,
+        ph.TenPhong,
+        lp.TenLoaiPhong,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) AS TongGhe,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) - (
+            SELECT COUNT(*)
+            FROM Ve v
+            JOIN HoaDon hd ON hd.MaDon = v.MaDon
+            WHERE v.MaSuat = s.MaSuat
+              AND (
+                v.TrangThaiVe = 'DA_THANH_TOAN'
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('CHUA_THANH_TOAN', N'Ch? thanh to�n')
+                    AND hd.ThoiGianDat >= DATEADD(MINUTE, -10, GETDATE())
+                )
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('DA_THANH_TOAN', N'�? thanh to�n')
+                )
+              )
+        ) AS SoGheTrong
+    FROM SuatChieu s
+    LEFT JOIN PhongChieu ph ON s.MaPhong = ph.MaPhong
+    LEFT JOIN LoaiPhong lp ON ph.MaLoaiPhong = lp.MaLoaiPhong
+    WHERE s.MaPhim = ?
+      AND s.NgayChieu = ?
+      AND (ph.MaRap = ? OR s.MaRap = ?)
+    ORDER BY s.GioChieu
+
+Hibernate:     SELECT
+        s.MaSuat,
+        CONVERT(VARCHAR(5), s.GioChieu, 108) AS GioChieu,
+        s.Gia,
+        ph.MaPhong,
+        ph.TenPhong,
+        lp.TenLoaiPhong,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) AS TongGhe,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) - (
+            SELECT COUNT(*)
+            FROM Ve v
+            JOIN HoaDon hd ON hd.MaDon = v.MaDon
+            WHERE v.MaSuat = s.MaSuat
+              AND (
+                v.TrangThaiVe = 'DA_THANH_TOAN'
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('CHUA_THANH_TOAN', N'Ch? thanh to�n')
+                    AND hd.ThoiGianDat >= DATEADD(MINUTE, -10, GETDATE())
+                )
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('DA_THANH_TOAN', N'�? thanh to�n')
+                )
+              )
+        ) AS SoGheTrong
+    FROM SuatChieu s
+    LEFT JOIN PhongChieu ph ON s.MaPhong = ph.MaPhong
+    LEFT JOIN LoaiPhong lp ON ph.MaLoaiPhong = lp.MaLoaiPhong
+    WHERE s.MaPhim = ?
+      AND s.NgayChieu = ?
+      AND (ph.MaRap = ? OR s.MaRap = ?)
+    ORDER BY s.GioChieu
+
+Hibernate:     SELECT
+        s.MaSuat,
+        CONVERT(VARCHAR(5), s.GioChieu, 108) AS GioChieu,
+        s.Gia,
+        ph.MaPhong,
+        ph.TenPhong,
+        lp.TenLoaiPhong,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) AS TongGhe,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) - (
+            SELECT COUNT(*)
+            FROM Ve v
+            JOIN HoaDon hd ON hd.MaDon = v.MaDon
+            WHERE v.MaSuat = s.MaSuat
+              AND (
+                v.TrangThaiVe = 'DA_THANH_TOAN'
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('CHUA_THANH_TOAN', N'Ch? thanh to�n')
+                    AND hd.ThoiGianDat >= DATEADD(MINUTE, -10, GETDATE())
+                )
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('DA_THANH_TOAN', N'�? thanh to�n')
+                )
+              )
+        ) AS SoGheTrong
+    FROM SuatChieu s
+    LEFT JOIN PhongChieu ph ON s.MaPhong = ph.MaPhong
+    LEFT JOIN LoaiPhong lp ON ph.MaLoaiPhong = lp.MaLoaiPhong
+    WHERE s.MaPhim = ?
+      AND s.NgayChieu = ?
+      AND (ph.MaRap = ? OR s.MaRap = ?)
+    ORDER BY s.GioChieu
+
+Hibernate:     SELECT
+        s.MaSuat,
+        CONVERT(VARCHAR(5), s.GioChieu, 108) AS GioChieu,
+        s.Gia,
+        ph.MaPhong,
+        ph.TenPhong,
+        lp.TenLoaiPhong,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) AS TongGhe,
+        (
+            SELECT COUNT(*)
+            FROM Ghe g
+            WHERE g.MaPhong = ph.MaPhong
+        ) - (
+            SELECT COUNT(*)
+            FROM Ve v
+            JOIN HoaDon hd ON hd.MaDon = v.MaDon
+            WHERE v.MaSuat = s.MaSuat
+              AND (
+                v.TrangThaiVe = 'DA_THANH_TOAN'
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('CHUA_THANH_TOAN', N'Ch? thanh to�n')
+                    AND hd.ThoiGianDat >= DATEADD(MINUTE, -10, GETDATE())
+                )
+                OR (
+                    v.TrangThaiVe = 'DA_DAT'
+                    AND hd.TrangThai IN ('DA_THANH_TOAN', N'�? thanh to�n')
+                )
+              )
+        ) AS SoGheTrong
+    FROM SuatChieu s
+    LEFT JOIN PhongChieu ph ON s.MaPhong = ph.MaPhong
+    LEFT JOIN LoaiPhong lp ON ph.MaLoaiPhong = lp.MaLoaiPhong
+    WHERE s.MaPhim = ?
+      AND s.NgayChieu = ?
+      AND (ph.MaRap = ? OR s.MaRap = ?)
+    ORDER BY s.GioChieu
+
+^C

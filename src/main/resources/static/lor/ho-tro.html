@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UTC Cinema – Hỗ Trợ Khách Hàng</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .support-hero { background:linear-gradient(135deg,var(--bg-dark),#2a1a1e); color:#fff; padding:50px 0; text-align:center; }
+    .support-hero h1 { color:var(--accent-gold); font-size:2rem; margin-bottom:8px; }
+    .support-hero p { color:rgba(255,255,255,.7); }
+    .support-search { max-width:500px; margin:24px auto 0; position:relative; }
+    .support-search input { width:100%; padding:14px 50px 14px 20px; border:none; border-radius:30px; font-size:.95rem; }
+    .support-search i { position:absolute; right:20px; top:50%; transform:translateY(-50%); color:var(--text-muted); }
+    .faq-categories { display:flex; flex-wrap:wrap; gap:8px; justify-content:center; padding:32px 0 16px; }
+    .faq-cat-btn { padding:8px 20px; border:1px solid var(--border-light); border-radius:20px; font-size:.85rem; font-weight:500; background:var(--bg-white); color:var(--text-body); transition:var(--transition); cursor:pointer; }
+    .faq-cat-btn.active,.faq-cat-btn:hover { background:var(--accent-red); color:#fff; border-color:var(--accent-red); }
+    .contact-quick { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; padding:40px 0; border-top:1px solid var(--border-light); margin-top:40px; }
+    .contact-quick-card { text-align:center; padding:24px 16px; background:var(--bg-white); border-radius:var(--radius-lg); box-shadow:var(--shadow-sm); }
+    .contact-quick-card i { font-size:2rem; color:var(--accent-red); margin-bottom:12px; }
+    .contact-quick-card h4 { font-size:.9rem; margin-bottom:6px; }
+    .contact-quick-card p { font-size:.8rem; color:var(--text-muted); }
+    .contact-quick-card a { color:var(--accent-red); font-weight:600; }
+  </style>
+</head>
+<body>
+
+<div id="site-header"></div>
+<div class="gold-bar"></div>
+
+<section class="support-hero">
+  <div class="container">
+    <h1><i class="fas fa-headset"></i> Hỗ Trợ Khách Hàng</h1>
+    <p>Giải đáp mọi thắc mắc của quý khách</p>
+    <div class="support-search">
+      <input type="text" id="faqSearch" placeholder="Tìm kiếm câu hỏi..." oninput="searchFAQ(this.value)">
+      <i class="fas fa-search"></i>
+    </div>
+  </div>
+</section>
+
+<nav style="padding:12px 0;background:var(--bg-beige);border-bottom:1px solid var(--border-light);">
+  <div class="container" style="font-size:.85rem;color:var(--text-muted);">
+    <a href="index.html" style="color:var(--accent-gold)">Trang chủ</a>
+    <span> / </span>
+    <span>Hỗ trợ khách hàng</span>
+  </div>
+</nav>
+
+<section class="faq-section">
+  <div class="container">
+    <div class="faq-categories">
+      <button class="faq-cat-btn active" onclick="filterFAQ('all',this)">Tất cả</button>
+      <button class="faq-cat-btn" onclick="filterFAQ('mua-ve',this)">Mua vé</button>
+      <button class="faq-cat-btn" onclick="filterFAQ('thanh-toan',this)">Thanh toán</button>
+      <button class="faq-cat-btn" onclick="filterFAQ('thanh-vien',this)">Thành viên</button>
+      <button class="faq-cat-btn" onclick="filterFAQ('rap',this)">Rạp chiếu</button>
+      <button class="faq-cat-btn" onclick="filterFAQ('khac',this)">Khác</button>
+    </div>
+
+    <div id="faqList"></div>
+
+    <!-- Quick contact -->
+    <div class="contact-quick">
+      <div class="contact-quick-card">
+        <i class="fas fa-phone-alt"></i>
+        <h4>Hotline</h4>
+        <p><a href="tel:19001234">1900 1234</a></p>
+        <p>Thứ 2 – CN: 8:00 – 22:00</p>
+      </div>
+      <div class="contact-quick-card">
+        <i class="fas fa-envelope"></i>
+        <h4>Email</h4>
+        <p><a href="mailto:hotro@utccinema.vn">hotro@utccinema.vn</a></p>
+        <p>Phản hồi trong 24h</p>
+      </div>
+      <div class="contact-quick-card">
+        <i class="fab fa-facebook-messenger"></i>
+        <h4>Chat trực tuyến</h4>
+        <p>Nhắn tin qua Facebook</p>
+        <p><a href="#">fb.com/UTCCinema</a></p>
+      </div>
+      <div class="contact-quick-card">
+        <i class="fas fa-map-marker-alt"></i>
+        <h4>Trực tiếp tại rạp</h4>
+        <p>Quầy thông tin tại mỗi rạp</p>
+        <p><a href="rap-chieu-phim.html">Xem hệ thống rạp</a></p>
+      </div>
+    </div>
+
+    <!-- Cross-links -->
+    <div style="text-align:center;padding:32px 0 0;display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+      <a href="lien-he.html" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Liên hệ trực tiếp</a>
+      <a href="the-thanh-vien.html" class="btn btn-outline"><i class="fas fa-crown"></i> Thẻ thành viên</a>
+      <a href="mua-ve.html" class="btn btn-primary"><i class="fas fa-ticket-alt"></i> Mua vé xem phim</a>
+    </div>
+  </div>
+</section>
+
+<div id="quick-actions"></div>
+<div id="site-footer"></div>
+
+<script src="js/shared.js"></script>
+<script>
+const faqs = [
+  { cat:'mua-ve', q:'Làm thế nào để mua vé xem phim online?', a:'Bạn có thể mua vé trực tiếp trên website bằng cách chọn phim, rạp, suất chiếu và ghế ngồi. Sau đó tiến hành thanh toán để nhận vé điện tử.' },
+  { cat:'mua-ve', q:'Tôi có thể đặt vé trước bao lâu?', a:'Bạn có thể đặt vé trước tối đa 7 ngày kể từ ngày chiếu. Lịch chiếu được cập nhật hàng ngày.' },
+  { cat:'mua-ve', q:'Tôi có thể hủy/đổi vé đã mua không?', a:'Vé đã mua online có thể hủy hoặc đổi trước giờ chiếu 2 tiếng. Phí hủy vé là 10% giá trị vé. Vui lòng liên hệ hotline hoặc đến quầy rạp.' },
+  { cat:'mua-ve', q:'Tối đa mua được bao nhiêu vé một lần?', a:'Mỗi lần giao dịch, quý khách có thể mua tối đa 8 vé cho cùng một suất chiếu.' },
+  { cat:'thanh-toan', q:'Những hình thức thanh toán nào được chấp nhận?', a:'UTC Cinema hỗ trợ thanh toán qua: thẻ tín dụng/ghi nợ (Visa, Mastercard, JCB), ví điện tử (MoMo, ZaloPay, VNPay), chuyển khoản ngân hàng và thanh toán tại quầy.' },
+  { cat:'thanh-toan', q:'Thanh toán online có an toàn không?', a:'Toàn bộ giao dịch được mã hóa SSL 256-bit và xử lý qua cổng thanh toán đã được chứng nhận PCI-DSS. Thông tin thẻ không được lưu trữ trên hệ thống.' },
+  { cat:'thanh-vien', q:'Làm sao để đăng ký thẻ thành viên?', a:'Bạn chỉ cần tạo tài khoản trên website hoặc tại quầy rạp. Thẻ thành viên được kích hoạt tự động và hoàn toàn miễn phí.' },
+  { cat:'thanh-vien', q:'Điểm tích lũy được tính như thế nào?', a:'Mỗi 10.000đ chi tiêu, bạn nhận được 1 điểm (Thường), 1.5 điểm (Gold) hoặc 2 điểm (VIP). Điểm được cộng tự động sau mỗi giao dịch.' },
+  { cat:'thanh-vien', q:'Điểm thưởng có thời hạn sử dụng không?', a:'Điểm thưởng có hiệu lực trong 12 tháng kể từ ngày tích lũy. Sau thời hạn, điểm chưa sử dụng sẽ tự động hết hiệu lực.' },
+  { cat:'rap', q:'UTC Cinema có bao nhiêu rạp trên toàn quốc?', a:'Hiện UTC Cinema có hệ thống rạp tại các thành phố lớn trên cả nước. Xem danh sách chi tiết tại trang <a href="rap-chieu-phim.html">Rạp chiếu phim</a>.' },
+  { cat:'rap', q:'Rạp có chỗ gửi xe không?', a:'Tất cả rạp UTC Cinema đều có bãi giữ xe máy và ô tô. Khách hàng có vé xem phim được miễn phí gửi xe trong thời gian xem phim.' },
+  { cat:'khac', q:'Trẻ em dưới mấy tuổi được miễn vé?', a:'Trẻ em dưới 2 tuổi không chiếm ghế được miễn vé. Từ 2 tuổi trở lên cần mua vé đầy đủ. Trẻ dưới 13 tuổi cần có người lớn đi kèm.' },
+  { cat:'khac', q:'Tôi có thể mang đồ ăn từ ngoài vào rạp không?', a:'Để đảm bảo chất lượng dịch vụ và vệ sinh rạp, UTC Cinema không cho phép mang đồ ăn thức uống từ bên ngoài vào phòng chiếu. Quý khách có thể mua tại quầy của rạp.' },
+  { cat:'khac', q:'Rạp có phục vụ người khuyết tật không?', a:'Có. Tất cả rạp UTC Cinema đều có lối đi và chỗ ngồi dành riêng cho người khuyết tật. Vui lòng thông báo trước cho nhân viên để được hỗ trợ tốt nhất.' }
+];
+
+let currentCat = 'all';
+
+document.addEventListener('DOMContentLoaded', () => {
+  initPage('ho-tro');
+  renderFAQ(faqs);
+});
+
+function filterFAQ(cat, btn) {
+  currentCat = cat;
+  document.querySelectorAll('.faq-cat-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('faqSearch').value = '';
+  const filtered = cat === 'all' ? faqs : faqs.filter(f => f.cat === cat);
+  renderFAQ(filtered);
+}
+
+function searchFAQ(term) {
+  const lower = term.toLowerCase();
+  let filtered = faqs;
+  if (currentCat !== 'all') filtered = filtered.filter(f => f.cat === currentCat);
+  if (lower) filtered = filtered.filter(f => f.q.toLowerCase().includes(lower) || f.a.toLowerCase().includes(lower));
+  renderFAQ(filtered);
+}
+
+function renderFAQ(items) {
+  const el = document.getElementById('faqList');
+  if (!items.length) {
+    el.innerHTML = '<div class="empty-state"><i class="fas fa-search"></i><h3>Không tìm thấy câu hỏi phù hợp</h3></div>';
+    return;
+  }
+  el.innerHTML = items.map((f, i) => `
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)">
+        <span>${escapeHtml(f.q)}</span>
+        <i class="fas fa-chevron-down"></i>
+      </button>
+      <div class="faq-answer">${f.a}</div>
+    </div>
+  `).join('');
+}
+
+function toggleFAQ(btn) {
+  const wasOpen = btn.classList.contains('open');
+  // Close all
+  document.querySelectorAll('.faq-question').forEach(q => { q.classList.remove('open'); q.nextElementSibling.classList.remove('open'); });
+  if (!wasOpen) {
+    btn.classList.add('open');
+    btn.nextElementSibling.classList.add('open');
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTC Cinema – Tin Mới & Ưu Đãi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/UuDai.css">
+</head>
+<body>
+
+<div id="site-header"></div>
+<div class="gold-bar"></div>
+
+<section class="promo-hero">
+    <div class="container">
+        <h1><i class="fas fa-gift"></i> Tin Mới & Ưu Đãi</h1>
+        <p>Cập nhật những chương trình khuyến mãi hấp dẫn từ UTC Cinema</p>
+    </div>
+</section>
+
+<nav class="promo-breadcrumb">
+    <div class="container">
+        <a href="index.html">Trang chủ</a>
+        <span> / </span>
+        <span>Tin mới & Ưu đãi</span>
+    </div>
+</nav>
+
+<section class="promo-main-section">
+    <div class="container">
+        <div class="promo-tabs">
+            <button class="promo-tab active" onclick="filterPromo('all',this)">Tất cả</button>
+            <button class="promo-tab" onclick="filterPromo('khuyen-mai',this)">Khuyến mãi</button>
+            <button class="promo-tab" onclick="filterPromo('tin-tuc',this)">Tin tức phim</button>
+            <button class="promo-tab" onclick="filterPromo('su-kien',this)">Sự kiện</button>
+        </div>
+
+        <div class="promo-grid" id="promoGrid">
+        </div>
+    </div>
+</section>
+
+<div id="quick-actions"></div>
+<div id="site-footer"></div>
+
+<script src="../js/shared.js"></script>
+<script src="../js/UuDai.js"></script>
+</body>
+</html>

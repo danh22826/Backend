@@ -1,0 +1,147 @@
+/* --- Cinema Page Specific Styles --- */
+.rap-hero {
+    background: linear-gradient(135deg, var(--bg-dark, #1a1a1a), #2a1a1e);
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.rap-hero h1 {
+    color: var(--accent-gold, #ffd700);
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.rap-hero p {
+    color: rgba(255, 255, 255, .7);
+}
+
+.rap-breadcrumb {
+    padding: 12px 0;
+    background: var(--bg-beige, #fdfcf0);
+    border-bottom: 1px solid var(--border-light, #ddd);
+    font-size: .85rem;
+    color: var(--text-muted);
+}
+
+.rap-breadcrumb a {
+    color: var(--accent-gold);
+    text-decoration: none;
+}
+
+.rap-main-content {
+    padding: 32px 0;
+}
+
+.city-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    padding: 24px 0;
+}
+
+.city-btn {
+    padding: 8px 20px;
+    border: 1px solid var(--border-light, #ddd);
+    border-radius: 20px;
+    font-size: .85rem;
+    font-weight: 500;
+    background: #fff;
+    color: #333;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.city-btn.active, .city-btn:hover {
+    background: var(--accent-red, #e71a0f);
+    color: #fff;
+    border-color: var(--accent-red);
+}
+
+.rap-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 20px;
+    padding: 0 0 40px;
+}
+
+.rap-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.rap-card:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transform: translateY(-3px);
+}
+
+.rap-card-header {
+    background: var(--accent-red, #e71a0f);
+    color: #fff;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.rap-card-header i { font-size: 1.5rem; }
+.rap-card-header h3 { font-size: 1rem; font-weight: 700; margin: 0; }
+
+.rap-card-body { padding: 20px; }
+
+.rap-detail-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 12px;
+    font-size: .85rem;
+    color: #333;
+}
+
+.rap-detail-row i {
+    color: var(--accent-gold, #ffd700);
+    width: 18px;
+    text-align: center;
+    margin-top: 3px;
+}
+
+.rap-rooms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 12px;
+}
+
+.room-chip {
+    padding: 4px 12px;
+    background: #fdfcf0;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    font-size: .75rem;
+    font-weight: 500;
+}
+
+.rap-card-actions {
+    padding: 0 20px 20px;
+    display: flex;
+    gap: 8px;
+}
+
+.rap-card-actions .btn { font-size: .8rem; padding: 8px 16px; flex: 1; text-align: center; }
+
+.rap-cross-links {
+    text-align: center;
+    padding: 32px 0 0;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media(max-width:768px) {
+    .rap-list { grid-template-columns: 1fr; }
+}

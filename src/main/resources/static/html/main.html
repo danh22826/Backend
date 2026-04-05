@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTC Cinema - Phim</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css?v=20260404j">
+    <link rel="stylesheet" href="../css/main.css?v=20260404j">
+</head>
+<body>
+
+<div id="site-header"></div>
+<div class="gold-bar"></div>
+
+<div class="tab-bar">
+    <a href="main.html" class="active">PHIM ĐANG CHIẾU</a>
+    <a href="main.html#sap-chieu">PHIM SẮP CHIẾU</a>
+</div>
+
+<nav class="movie-breadcrumb">
+    <div class="container movie-breadcrumb-inner">
+        <a href="index.html" class="breadcrumb-home">Trang chủ</a>
+        <span> / </span>
+        <span>Phim</span>
+    </div>
+</nav>
+
+<section class="movie-filter-section">
+    <div class="container movie-filter-wrap">
+        <input
+                type="text"
+                id="searchInput"
+                class="form-control"
+                placeholder="🔍 Tìm phim..."
+                oninput="filterMovies()"
+        >
+        <select
+                id="genreFilter"
+                class="form-control"
+                onchange="filterMovies()"
+        >
+            <option value="">Tất cả thể loại</option>
+        </select>
+    </div>
+</section>
+
+<section class="movie-list-section">
+    <div class="container">
+        <div class="movie-grid" id="movieGrid">
+            <div class="loading-spinner"><div class="spinner"></div></div>
+        </div>
+        <div id="pagination" class="movie-pagination"></div>
+    </div>
+</section>
+
+<div id="quick-actions"></div>
+<div id="site-footer"></div>
+
+<script src="../js/shared.js?v=20260404k"></script>
+<script src="../js/main.js?v=20260404k"></script>
+</body>
+</html>

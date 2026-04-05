@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTC Cinema - Chi tiết phim</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css?v=20260404j">
+    <link rel="stylesheet" href="../css/chi-tiet-phim.css?v=20260404j">
+</head>
+<body>
+
+<div id="site-header"></div>
+<div class="gold-bar"></div>
+
+<section class="detail-trailer-section">
+    <div class="container">
+        <div class="trailer-stage" id="trailerStage">
+            <div class="trailer-placeholder">
+                <i class="fab fa-youtube"></i>
+                <p>Đang tải trailer...</p>
+            </div>
+        </div>
+
+        <div class="trailer-strip">
+            <button type="button" class="trailer-strip-arrow" aria-label="Trailer">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <div class="trailer-thumb active">
+                <img id="trailerThumb" src="../poster/default.jpg" alt="Trailer thumbnail">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="detail-info-section">
+    <div class="container">
+        <div class="detail-layout">
+            <aside class="detail-poster-col">
+                <img id="moviePoster" src="../poster/default.jpg" alt="Poster phim" class="detail-poster">
+                <a id="bookTicketBtn" href="#showtimeSection" class="detail-book-btn">Đặt vé</a>
+            </aside>
+
+            <div class="detail-content-col">
+                <h1 id="movieTitle" class="detail-title">Đang tải phim...</h1>
+
+                <div class="movie-info-list">
+                    <div class="movie-info-item">
+                        <span class="info-label">Độ tuổi</span>
+                        <span class="info-value" id="movieAge">Đang cập nhật</span>
+                    </div>
+
+                    <div class="movie-info-item">
+                        <span class="info-label">Ngày phát hành</span>
+                        <span class="info-value" id="movieRelease">Đang cập nhật</span>
+                    </div>
+
+                    <div class="movie-info-item">
+                        <span class="info-label">Thông tin cơ bản</span>
+                        <span class="info-value" id="movieBasicInfo">Đang cập nhật</span>
+                    </div>
+
+                    <div class="movie-info-item">
+                        <span class="info-label">Chi tiết</span>
+                        <span class="info-value" id="movieExtraInfo">Đang cập nhật</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="movie-summary-box">
+            <h2>Tóm tắt</h2>
+            <p id="movieSummary">Đang tải nội dung phim...</p>
+        </div>
+    </div>
+</section>
+
+<section id="showtimeSection" class="showtime-section">
+    <div class="container">
+        <h3 class="section-title">Lịch chiếu</h3>
+
+        <div id="danhSachSuatChieu" class="showtime-board">
+            <div class="empty-state">
+                <i class="fas fa-film"></i>
+                <h3>Đang tải suất chiếu...</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="quick-actions"></div>
+<div id="site-footer"></div>
+
+<script src="../js/shared.js?v=20260404j"></script>
+<script src="../js/chi-tiet-phim.js?v=20260404j"></script>
+</body>
+</html>
+

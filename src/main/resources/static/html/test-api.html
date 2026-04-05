@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test API - UTC Cinema</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    .container {
+      background: white;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #e31837;
+      border-bottom: 2px solid #e31837;
+      padding-bottom: 10px;
+    }
+    button {
+      background: #e31837;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      margin: 10px 0;
+    }
+    button:hover {
+      background: #c41530;
+    }
+    .success {
+      color: green;
+      padding: 8px;
+      margin: 5px 0;
+      background: #e8f5e9;
+      border-radius: 4px;
+    }
+    .error {
+      color: red;
+      padding: 8px;
+      margin: 5px 0;
+      background: #ffebee;
+      border-radius: 4px;
+    }
+    .info {
+      color: #856404;
+      padding: 8px;
+      margin: 5px 0;
+      background: #fff3cd;
+      border-radius: 4px;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 10px;
+      border-radius: 4px;
+      overflow-x: auto;
+      font-size: 12px;
+    }
+    hr {
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🧪 KIỂM TRA API - UTC CINEMA</h1>
+    <p>Kiểm tra kết nối giữa Frontend và Backend</p>
+    
+    <button onclick="testAllAPI()">▶ BẮT ĐẦU KIỂM TRA</button>
+    <button onclick="clearResult()" style="background:#666">🗑 Xóa kết quả</button>
+    
+    <hr>
+    
+    <div id="result">
+      <p class="info">📌 Nhấn nút "BẮT ĐẦU KIỂM TRA" để kiểm tra tất cả API</p>
+    </div>
+    
+    <hr>
+    
+    <div>
+      <h3>⚙️ Cấu hình hiện tại:</h3>
+      <pre id="config"></pre>
+    </div>
+  </div>
+
+  <script>
+    // ===== CẤU HÌNH API (GIỐNG shared.js) =====
+    const API_BASE_URL = 'http://localhost:8080/api';
+    
+    // Hiển thị cấu hình
+    document.getElementById('config').innerHTML = `API_BASE_URL = "${API_BASE_URL}"\n\n💡 Nếu backend chạy ở cổng khác, hãy sửa lại dòng này trong file test-api.html và shared.js`;
+    
+    // Hàm gọi API
+    async function callAPI(url, options = {}) {
+      const response = await fetch(API_BASE_URL + url, {
+        ...options,
+        headers: { 'Content-Type': 'application/json', ...options.headers }
+      });
+      return response;
+    }
+    
+    // Hiển thị kết quả
+    function addResult(message, type = 'info') {
+      const resultDiv = document.getElementById('result');
+      const className = type === 'success' ? 'success' : (type === 'error' ? 'error' : 'info');
+      resultDiv.innerHTML += `<div class="${className}">${message}</div>`;
+    }
+    
+    function clearResult() {
+      document.getElementById('result').innerHTML = '';
+    }
+    
+    // ===== KIỂM TRA TẤT CẢ API =====
+    async function testAllAPI() {
+      clearResult();
+      addResult('🚀 Bắt đầu kiểm tra API...', 'info');
+      addResult(`📡 API Base URL: ${API_BASE_URL}`, 'info');
+      
+      // Test 1: Server có chạy không?
+      addResult('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━', 'info');
+      addResult('1️⃣ Kiểm tra kết nối server...', 'info');
+      
+      try {
+        const testConn = await fetch(API_BASE_URL.replace('/api', ''));
+        addResult('✅ Server đang chạy!', 'success');
+      } catch (e) {
+        addResult('❌ KHÔNG THỂ KẾT NỐI SERVER!', 'error');
+        addResult('💡 Hãy kiểm tra:', 'info');
+        addResult('   - Backend đã được start chưa? (java -jar ...)', 'info');
+        addResult('   - Cổng backend có đúng là 8080 không?', 'info');
+        addResult('   - API_BASE_URL có đúng không?', 'info');
+        return;
+      }
+      
+      // Test 2: API /phim
+      addResult('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━', 'info');
+      addResult('2️⃣ Kiểm tra API /phim (Lấy danh sách phim)...', 'info');
+      try {
+        const res = await callAPI('/phim');
+        if (res.ok) {
+          const data = await res.json();
+          addResult(`✅ API /phim thành công! Số phim: ${data.length}`, 'success');
+        } else {
+          addResult(`❌ API /phim thất bại: ${res.status} ${res.statusText}`, 'error');
+        }
+      } catch (e) {
+        addResult(`❌ Lỗi: ${e.message}`, 'error');
+      }
+      
+      // Test 3: API /thanh-pho
+      addResult('3️⃣ Kiểm tra API /thanh-pho (Lấy danh sách thành phố)...', 'info');
+      try {
+        const res = await callAPI('/thanh-pho');
+        if (res.ok) {
+          const data = await res.json();
+          addResult(`✅ API /thanh-pho thành công! Số thành phố: ${data.length}`, 'success');
+        } else {
+          addResult(`❌ API /thanh-pho thất bại: ${res.status} ${res.statusText}`, 'error');
+        }
+      } catch (e) {
+        addResult(`❌ Lỗi: ${e.message}`, 'error');
+      }
+      
+      // Test 4: API /the-loai
+      addResult('4️⃣ Kiểm tra API /the-loai (Lấy danh sách thể loại)...', 'info');
+      try {
+        const res = await callAPI('/the-loai');
+        if (res.ok) {
+          const data = await res.json();
+          addResult(`✅ API /the-loai thành công! Số thể loại: ${data.length}`, 'success');
+        } else {
+          addResult(`❌ API /the-loai thất bại: ${res.status} ${res.statusText}`, 'error');
+        }
+      } catch (e) {
+        addResult(`❌ Lỗi: ${e.message}`, 'error');
+      }
+      
+      // Test 5: API đăng nhập (demo)
+      addResult('5️⃣ Kiểm tra API /auth/login (Đăng nhập demo)...', 'info');
+      try {
+        const res = await callAPI('/auth/login', {
+          method: 'POST',
+          body: JSON.stringify({ username: 'demo', password: 'demo123' })
+        });
+        if (res.ok) {
+          const data = await res.json();
+          addResult(`✅ API /auth/login thành công! Username: ${data.username}`, 'success');
+          if (data.token) {
+            addResult(`   🔑 Token đã nhận được: ${data.token.substring(0, 30)}...`, 'success');
+          }
+        } else {
+          addResult(`❌ API /auth/login thất bại: ${res.status} ${res.statusText}`, 'error');
+          addResult(`   💡 Có thể tài khoản demo chưa tồn tại, hãy đăng ký trước`, 'info');
+        }
+      } catch (e) {
+        addResult(`❌ Lỗi: ${e.message}`, 'error');
+      }
+      
+      // Test 6: API /suat-chieu (nếu có dữ liệu)
+      addResult('6️⃣ Kiểm tra API /suat-chieu (Lấy suất chiếu mẫu)...', 'info');
+      addResult(`   ⚠️ API này cần tham số, bỏ qua kiểm tra tự động`, 'info');
+      
+      // Tổng kết
+      addResult('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━', 'info');
+      addResult('📊 KIỂM TRA HOÀN TẤT!', 'info');
+      addResult('💡 Nếu có API bị lỗi, hãy kiểm tra lại backend.', 'info');
+    }
+  </script>
+</body>
+</html>

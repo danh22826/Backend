@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTC Cinema – Trang Chủ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<section class="hero-section" id="heroSection">
+    <div class="hero-slider" id="heroSlider">
+        <div class="hero-slide slide-1">
+            <div class="hero-content">
+                <h2>Chào mừng đến UTC Cinema</h2>
+                <p>Trải nghiệm điện ảnh đỉnh cao – Đặt vé ngay hôm nay!</p>
+                <a href="DatVe.html" class="btn btn-primary">MUA VÉ NGAY</a>
+            </div>
+        </div>
+        <div class="hero-slide slide-2">
+            <div class="hero-content">
+                <h2>Phim Hot Tại Rạp</h2>
+                <p>Cập nhật những bộ phim bom tấn mới nhất</p>
+                <a href="main.html" class="btn btn-primary">XEM PHIM</a>
+            </div>
+        </div>
+        <div class="hero-slide slide-3">
+            <div class="hero-content">
+                <h2>Ưu Đãi Hấp Dẫn</h2>
+                <p>Nhiều khuyến mãi đặc biệt dành cho thành viên</p>
+                <a href="uu-dai.html" class="btn btn-gold">XEM ƯU ĐÃI</a>
+            </div>
+        </div>
+    </div>
+    <button class="hero-arrow hero-prev" onclick="heroSlide(-1)"><i class="fas fa-chevron-left"></i></button>
+    <button class="hero-arrow hero-next" onclick="heroSlide(1)"><i class="fas fa-chevron-right"></i></button>
+    <div class="hero-dots" id="heroDots"></div>
+</section>
+
+<div class="gold-bar"></div>
+
+<section class="quick-booking-section">
+    <div class="container qb-container">
+        <select id="qbCity" class="form-control qb-select" onchange="qbLoadRaps()">
+            <option value="">-- Chọn thành phố --</option>
+        </select>
+        <select id="qbRap" class="form-control qb-select" onchange="qbLoadMovies()">
+            <option value="">-- Chọn rạp --</option>
+        </select>
+        <input type="date" id="qbDate" class="form-control qb-date" onchange="qbLoadMovies()">
+        <select id="qbMovie" class="form-control qb-movie">
+            <option value="">-- Chọn phim --</option>
+        </select>
+        <button class="btn btn-primary" onclick="qbGo()">MUA VÉ NGAY</button>
+    </div>
+</section>
+
+<section class="home-movies-section">
+    <div class="container">
+        <h2 class="section-title text-center">Phim Đang Chiếu</h2>
+        <div class="movie-grid" id="movieGrid">
+            <div class="loading-spinner"><div class="spinner"></div></div>
+        </div>
+        <div class="view-all-wrap">
+            <a href="main.html" class="btn btn-outline">Xem tất cả phim &rarr;</a>
+        </div>
+    </div>
+</section>
+
+<section class="home-promo-section">
+    <div class="container">
+        <h2 class="section-title text-center">Ưu Đãi Nổi Bật</h2>
+        <div class="gift-grid" id="promoGrid">
+            <div class="gift-card">
+                <div class="gift-card-img promo-superplex">
+                    <span>MOVIE<br>GIFT TICKET</span>
+                </div>
+                <div class="gift-card-body">
+                    <h4>Vé Super Plex</h4>
+                    <p class="gift-expiry">Hạn sử dụng: 12 tháng</p>
+                    <p class="gift-price">150.000₫</p>
+                </div>
+            </div>
+            <div class="gift-card">
+                <div class="gift-card-img promo-charlotte">
+                    <span>CHARLOTTE</span>
+                </div>
+                <div class="gift-card-body">
+                    <h4>Vé Charlotte VIP</h4>
+                    <p class="gift-expiry">Hạn sử dụng: 12 tháng</p>
+                    <p class="gift-price">370.000₫</p>
+                </div>
+            </div>
+            <div class="gift-card">
+                <div class="gift-card-img promo-comfort">
+                    <span>CINE<br>COMFORT</span>
+                </div>
+                <div class="gift-card-body">
+                    <h4>Vé Cine Comfort</h4>
+                    <p class="gift-expiry">Hạn sử dụng: 12 tháng</p>
+                    <p class="gift-price">190.000₫</p>
+                </div>
+            </div>
+            <div class="gift-card">
+                <div class="gift-card-img promo-2d">
+                    <span>PHIM 2D</span>
+                </div>
+                <div class="gift-card-body">
+                    <h4>Vé xem phim 2D</h4>
+                    <p class="gift-expiry">Hạn sử dụng: 12 tháng</p>
+                    <p class="gift-price">130.000₫</p>
+                </div>
+            </div>
+        </div>
+        <div class="view-all-wrap">
+            <a href="uu-dai.html" class="btn btn-outline">Xem tất cả ưu đãi &rarr;</a>
+        </div>
+    </div>
+</section>
+
+<div id="quick-actions"></div>
+<div id="site-footer"></div>
+
+<script src="../js/shared.js?v=20260404k"></script>
+<script src="../js/home.js?v=20260404k"></script>
+</body>
+</html>
